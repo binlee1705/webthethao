@@ -39,10 +39,10 @@
   background: rgb(255, 255, 255);
 }
 
-#charts .tabs .tab-contents {
+#playerRankings .tabs .tab-contents, #charts .tabs .tab-contents {
   position: relative;
 }
-#charts .tabs .tab-contents .tab:not(.active) {
+#playerRankings .tabs .tab-contents .tab:not(.active), #charts .tabs .tab-contents .tab:not(.active) {
   position: absolute;
   top: 0;
   left: 0;
@@ -1300,6 +1300,9 @@ header .wrp .right .menu #menu li ul li ul {
 #session .tabs .tab-links li > a .icon img {
   height: 30px;
 }
+#session .tabs .tab-contents .tab {
+  display: flex;
+}
 #session .tabs .tab-contents .tab:not(.active) {
   display: none;
 }
@@ -1495,4 +1498,124 @@ header .wrp .right .menu #menu li ul li ul {
 #charts .tabs .tab-contents .group .table td,
 #charts .tabs .tab-contents .group .table th {
   text-align: center;
+}
+#charts .tabs .tab-contents .viewDetail {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  padding: 7px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #f7f7f7;
+  color: #333;
+  text-align: center;
+}
+#charts .tabs .tab-contents .viewDetail:hover {
+  background: #7ec83b;
+  color: #fff;
+}
+
+#playerRankings {
+  background: #003059;
+  padding: 10px;
+}
+#playerRankings .tabs .tab-links {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+#playerRankings .tabs .tab-links li a {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 6px 12px;
+  border-bottom: 3px solid #fff;
+  padding-bottom: 10px;
+  color: #fff;
+}
+#playerRankings .tabs .tab-links li.active a {
+  border-bottom: 3px solid #7ec83b;
+  color: #7ec83b;
+  font-weight: 500;
+}
+#playerRankings .tabs .tab-contents .group {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+#playerRankings .tabs .tab-contents .group .item .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #7ec83b;
+  color: #fff;
+}
+#playerRankings .tabs .tab-contents .group .item .top .imagePlayer {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  overflow: hidden;
+  margin: -5px 0 -2px 15px;
+}
+#playerRankings .tabs .tab-contents .group .item .top .imagePlayer img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#playerRankings .tabs .tab-contents .group .item .top .countGoal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+#playerRankings .tabs .tab-contents .group .item .info {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  align-items: center;
+  padding: 10px 5px;
+}
+#playerRankings .tabs .tab-contents .group .item .info .name {
+  font-weight: bold;
+}
+#playerRankings .tabs .tab-contents .group .item .info .team {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#playerRankings .tabs .tab-contents .group .item .info .team .icon {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#playerRankings .tabs .tab-contents .group .item .info .team .icon img {
+  width: 100%;
+  height: auto;
+}
+#playerRankings .tabs .tab-contents .viewDetail {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  padding: 7px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #f7f7f7;
+  color: #333;
+  text-align: center;
+}
+#playerRankings .tabs .tab-contents .viewDetail:hover {
+  background: #7ec83b;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

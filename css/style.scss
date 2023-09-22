@@ -206,8 +206,11 @@ header {
         }
       }
       &-contents {
-        .tab:not(.active) {
-          display: none;
+        .tab {
+          display: flex;
+          &:not(.active) {
+            display: none;
+          }
         }
       }
     }
@@ -445,6 +448,138 @@ header {
             th {
               text-align: center;
             }
+          }
+        }
+        .viewDetail {
+          display: block;
+          margin-top: 30px;
+          margin-bottom: 5px;
+          padding: 7px 10px;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          background: #f7f7f7;
+          color: #333;
+          text-align: center;
+          &:hover {
+            background: $color-hover;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+#playerRankings {
+  background: $color-main;
+  padding: 10px;
+  .tabs {
+    .tab {
+      &-links {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        margin-bottom: 15px;
+        li {
+          a {
+            display: block;
+            font-size: 18px;
+            font-weight: 400;
+            padding: 6px 12px;
+            border-bottom: 3px solid #fff;
+            padding-bottom: 10px;
+            color: #fff;
+          }
+          &.active {
+            a {
+              border-bottom: 3px solid $color-hover;
+              color: $color-hover;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+      &-contents {
+        @extend %tabContent;
+        .group {
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+          .item {
+            .top {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              background: $color-hover;
+              color: #fff;
+              .imagePlayer {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                border: 2px solid #fff;
+                overflow: hidden;
+                margin: -5px 0 -2px 15px;
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+              .countGoal {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                padding-right: 10px;
+                font-size: 15px;
+                font-weight: bold;
+              }
+            }
+            .info {
+              display: flex;
+              justify-content: space-between;
+              background: #fff;
+              align-items: center;
+              padding: 10px 5px;
+              .name {
+                font-weight: bold;
+              }
+              .team {
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                .icon {
+                  width: 30px;
+                  height: 30px;
+                  border: 1px solid #ddd;
+                  border-radius: 4px;
+                  padding: 4px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  img {
+                    width: 100%;
+                    height: auto;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .viewDetail {
+          display: block;
+          margin-top: 20px;
+          margin-bottom: 5px;
+          padding: 7px 10px;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          background: #f7f7f7;
+          color: #333;
+          text-align: center;
+          &:hover {
+            background: $color-hover;
+            color: #fff;
           }
         }
       }

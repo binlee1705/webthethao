@@ -83,7 +83,7 @@ $(document).ready(() => {
         function (e) {
             var currentAttrValue = $(this).attr('href');
             $('.tabs ' + currentAttrValue).addClass("active").siblings().removeClass("active");
-            $(this).parent('li').addClass('active').siblings().removeClass('active');
+            $(this).parents('li').addClass('active').siblings().removeClass('active');
             e.preventDefault();
         });
     $('.modal').on('shown.bs.modal', function () {
