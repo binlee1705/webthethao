@@ -1618,4 +1618,12 @@ header .wrp .right .menu #menu li ul li ul {
 #playerRankings .tabs .tab-contents .viewDetail:hover {
   background: #7ec83b;
   color: #fff;
+}
+
+#linkWebsites {
+  width: 100%;
+  margin: 20px 0;
+  height: 35px;
+  border-color: #999;
+  border-radius: 3px;
 }/*# sourceMappingURL=style.css.map */

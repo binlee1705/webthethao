@@ -101,6 +101,9 @@ $(document).ready(() => {
     $('.mediaHome .group').each(function () {
         $(this).owlCarousel(owlslide($(this).find('>*').length, [30, 30, 30, 30, 30, 30], true, true, true, [2, 2, 2, 2, 2], "", ""));
     });
+    $('.commonSlideBanner').each(function () {
+        $(this).owlCarousel(owlslide($(this).find('>*').length, [10, 10, 10, 10, 10, 10], true, true, true, [1, 1, 1, 1, 1], "fadeIn", "fadeOut"));
+    });
 });
 
 function preventScroll(e) {
@@ -137,5 +140,13 @@ function Resetnoidung() {
 function fullSrceenIframe() {
     if ($(".iframe") && $(".iframe").length > 0) {
         $(".iframe,body").toggleClass("fullScreen")
+    }
+}
+
+function chooseWebsite(ele) {
+    var link = ele.val();
+    if (link) {
+        window.open(link, "_blank");
+        ele.val("").trigger("change");
     }
 }
