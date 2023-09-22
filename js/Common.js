@@ -93,13 +93,13 @@ $(document).ready(() => {
         var $filter = $(this).next(".formFilter");
         $filter.toggleClass("ac");
     });
-    $(".marquee").marquee({ duration: 20000, gap: 20, delayBeforeStart: 0, direction: "left", duplicated: true, pauseOnHover: true, startVisible: true });
+    $(".marquee").marquee({ duration: 20000, gap: 5, delayBeforeStart: 0, direction: "left", duplicated: true, pauseOnHover: true, startVisible: true });
 
-    $('#galleryHome .imageHome').each(function () {
-        $(this).owlCarousel(owlslide($(this).find('>*').length, [10, 10, 10, 10, 10, 10], false, true, true, [2, 2, 2, 2, 2], "", ""));
+    $('#slideMain .group').each(function () {
+        $(this).owlCarousel(owlslide($(this).find('>*').length, [10, 10, 10, 10, 10, 10], true, true, true, [1, 1, 1, 1, 1], "fadeIn", "fadeOut"));
     });
-    $('#newsHot .left .group').each(function () {
-        $(this).owlCarousel(owlslide($(this).find('>*').length, [10, 10, 10, 10, 10, 10], true, false, false, [1, 1, 1, 1, 1], "", ""));
+    $('.mediaHome .group').each(function () {
+        $(this).owlCarousel(owlslide($(this).find('>*').length, [30, 30, 30, 30, 30, 30], true, true, true, [2, 2, 2, 2, 2], "", ""));
     });
 });
 
