@@ -189,6 +189,7 @@ header {
         li {
           flex: 1;
           background: var(--bg);
+          position: relative;
           > a {
             display: flex;
             align-items: center;
@@ -203,14 +204,102 @@ header {
               height: 30px;
             }
           }
+          &:after {
+            content: "";
+            width: 0;
+            height: 0;
+            border-left: 7px solid #fff;
+            border-top: 7px solid #fff;
+            border-bottom: 7px solid transparent;
+            border-right: 7px solid transparent;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -7px;
+            pointer-events: none;
+            transform: rotate(45deg);
+            display: none;
+          }
+          &.active::after {
+            display: block;
+          }
         }
       }
       &-contents {
+        background: url(./icon/topbar-ltd-bg.png) repeat-x;
+        background-size: auto 100%;
         .tab {
           display: flex;
           &:not(.active) {
             display: none;
           }
+        }
+        .item {
+          padding: 5px;
+          border: 1px solid #fff;
+          border-left: 0.5px solid #fff;
+          border-right: 0.5px solid #fff;
+          .info {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            .stadium {
+              font-size: 12px;
+            }
+          }
+          .result {
+            margin-top: 5px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            .team_1,
+            .team_2 {
+              .logo {
+                width: 40px;
+                height: 40px;
+                border-radius: 4px;
+                background: #fff;
+                padding: 4px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                  width: 100%;
+                  height: auto;
+                }
+                flex-direction: column;
+              }
+              .name {
+                margin-top: 3px;
+                font-weight: bold;
+                display: block;
+              }
+            }
+            .score {
+              display: flex;
+              flex-direction: column;
+              margin: 0 25px;
+              span {
+                height: 21px;
+              }
+              a {
+                padding: 0;
+                font-size: 13px;
+                min-width: 40px;
+                line-height: unset;
+                word-spacing: 0;
+                background-color: #fff;
+                color: #ff0000;
+                display: block;
+                font-weight: bold;
+                text-align: center;
+                border-radius: 20px;
+              }
+            }
+          }
+        }
+        .owl-nav {
+          @extend %owl-nav;
         }
       }
     }
@@ -218,9 +307,15 @@ header {
 }
 
 #slideMain {
+  position: relative;
+  margin-bottom: 25px;
   .group {
-    .owl-nav {
-      @extend %owl-nav;
+    .owl-dots {
+      @extend %owl-dots;
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }

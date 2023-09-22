@@ -107,7 +107,7 @@ $(document).ready(() => {
     $filter.toggleClass("ac");
   });
   $(".marquee").marquee({
-    duration: 20000,
+    duration: 30000,
     gap: 5,
     delayBeforeStart: 0,
     direction: "left",
@@ -123,7 +123,7 @@ $(document).ready(() => {
         [10, 10, 10, 10, 10, 10],
         true,
         true,
-        true,
+        false,
         [1, 1, 1, 1, 1],
         "fadeIn",
         "fadeOut"
@@ -153,6 +153,20 @@ $(document).ready(() => {
         true,
         true,
         [1, 1, 1, 1, 1],
+        "fadeIn",
+        "fadeOut"
+      )
+    );
+  });
+  $("#session .tab").each(function () {
+    $(this).owlCarousel(
+      owlslide(
+        $(this).find(">*").length,
+        [0, 0, 0, 0, 0, 0],
+        true,
+        true,
+        true,
+        [4, 4, 4, 4, 4],
         "fadeIn",
         "fadeOut"
       )
