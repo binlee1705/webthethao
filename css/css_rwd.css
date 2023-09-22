@@ -83,7 +83,7 @@
     height: 100vh;
     z-index: 25;
     padding: 0;
-    background: #2873aa;
+    background: #7ec83b;
     color: #333;
     top: 0;
     left: -100%;
@@ -113,7 +113,7 @@
     flex-wrap: wrap;
   }
   header .wrp #menu ul li.active {
-    background: #2873aa !important;
+    background: #7ec83b !important;
     color: #fff !important;
   }
   header .wrp #menu ul li a {
