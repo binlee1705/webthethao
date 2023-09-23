@@ -172,6 +172,20 @@ $(document).ready(() => {
       )
     );
   });
+  $("#news.detail .other .tab-contents .owl-carousel").each(function () {
+    $(this).owlCarousel(
+      owlslide(
+        $(this).find(">*").length,
+        [15, 15, 15, 15, 15, 15],
+        true,
+        true,
+        true,
+        [4, 4, 4, 4, 4],
+        "",
+        ""
+      )
+    );
+  });
 });
 
 function preventScroll(e) {

@@ -354,6 +354,9 @@ header {
       width: percent(300, 1344);
     }
   }
+  &.inside {
+    padding: 40px 0;
+  }
 }
 
 #latestNews {
@@ -859,7 +862,6 @@ header {
 }
 
 #news {
-  margin-top: 40px;
   .titleCate {
     text-transform: uppercase;
     font-size: 30px;
@@ -1010,6 +1012,101 @@ header {
       }
     }
   }
+  &.detail {
+    .titleCate {
+      text-transform: none;
+      margin-bottom: 20px;
+    }
+    .description {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 26px;
+    }
+    .contentDetail {
+      margin-top: 20px;
+      font-size: 15px;
+      line-height: 26px;
+    }
+    .nextPrevNews {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      gap: 50px;
+      > * {
+        flex: 1;
+        .title {
+          font-size: 12px;
+          color: #c1c1c1;
+          margin-bottom: 7px;
+        }
+        .name {
+          font-size: 15px;
+        }
+        &:last-child {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+        }
+      }
+    }
+    .other {
+      margin-top: 40px;
+      .tabs {
+        .tab-links {
+          margin: 0;
+          padding: 0;
+          margin-bottom: 20px;
+          list-style: none;
+          display: flex;
+          text-transform: uppercase;
+          border-bottom: 2px solid $color-hover;
+          li {
+            a {
+              font-weight: bold;
+              padding: 5px 10px 3px 10px;
+              display: block;
+              font-size: 13px;
+            }
+            &.active {
+              background: $color-hover;
+              color: #fff;
+            }
+          }
+        }
+        .tab-contents {
+          @extend %tabContent;
+          .item {
+            .wImage {
+              &:before {
+                padding-bottom: wImage(150, 218);
+              }
+              border-radius: 4px;
+              .nameCate {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                z-index: 5;
+                padding: 5px 15px;
+                font-size: 12px;
+                background: $color-main;
+                color: #fff;
+                display: inline-block;
+                &:hover {
+                  background: $color-hover;
+                }
+              }
+            }
+            .name {
+              display: block;
+              margin-top: 10px;
+              font-weight: bold;
+              line-height: 21px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .pagging {
@@ -1042,6 +1139,26 @@ header {
         border-color: $color-main;
         color: #fff;
       }
+    }
+  }
+}
+.plugShare {
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  gap: 8px;
+  .item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    background: var(--bg);
+    color: #fff;
+    &:hover {
+      filter: brightness(120%);
     }
   }
 }
