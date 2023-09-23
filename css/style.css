@@ -1907,6 +1907,40 @@ header .wrp .right .menu #menu li ul li ul {
   color: #003059;
 }
 
+#news {
+  margin-top: 40px;
+}
+#news .titleCate {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+#news .catesort {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+#news .catesort .listCate {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+#news .catesort .listCate .listCate_item {
+  padding: 7px 15px 5px 15px;
+  background: #003059;
+  color: #fff;
+  display: block;
+  border-radius: 3px;
+}
+#news .catesort .listCate .listCate_item.active, #news .catesort .listCate .listCate_item:hover {
+  background: #7ec83b;
+}
+#news .catesort .sort {
+  width: 150px;
+}
 #news.list .main {
   margin-bottom: 40px;
   display: grid;
@@ -1932,6 +1966,9 @@ header .wrp .right .menu #menu li ul li ul {
 }
 #news.list .main .item:nth-child(1) {
   grid-area: 1/1/3/2;
+}
+#news.list .main .item:nth-child(1) .wImage {
+  height: 100%;
 }
 #news.list .main .item:nth-child(1) .wImage::before {
   padding-bottom: 66.8148148148%;
@@ -2011,4 +2048,35 @@ header .wrp .right .menu #menu li ul li ul {
 }
 #news.list .group .item .info .nameCate:hover {
   background: #7ec83b;
+}
+
+.pagging {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  font-size: 13px;
+}
+.pagging ul {
+  flex: 1;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 8px;
+}
+.pagging ul li a {
+  padding: 0 10px;
+  min-width: 33px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e3e3e3;
+  color: #666;
+}
+.pagging ul li.active a, .pagging ul li:hover a {
+  background: #003059;
+  border-color: #003059;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
