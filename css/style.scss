@@ -982,7 +982,7 @@ header {
       flex-wrap: wrap;
       gap: 25px;
       .item {
-        width: calc((100% - 60px) / 3);
+        width: calc((100% - 30px) / 2);
         display: flex;
         gap: 15px;
         align-items: flex-start;
@@ -1014,6 +1014,13 @@ header {
         }
       }
     }
+    &.nofication {
+      .group {
+        .item {
+          width: calc((100% - 60px) / 3);
+        }
+      }
+    }
   }
   &.detail {
     .titleCate {
@@ -1029,28 +1036,6 @@ header {
       margin-top: 20px;
       font-size: 15px;
       line-height: 26px;
-    }
-    .nextPrevNews {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 30px;
-      gap: 50px;
-      > * {
-        flex: 1;
-        .title {
-          font-size: 12px;
-          color: #c1c1c1;
-          margin-bottom: 7px;
-        }
-        .name {
-          font-size: 15px;
-        }
-        &:last-child {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-end;
-        }
-      }
     }
     .other {
       margin-top: 40px;
@@ -1111,7 +1096,28 @@ header {
     }
   }
 }
-
+.nextPrevNews {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 50px;
+  > * {
+    flex: 1;
+    .title {
+      font-size: 12px;
+      color: #c1c1c1;
+      margin-bottom: 7px;
+    }
+    .name {
+      font-size: 15px;
+    }
+    &:last-child {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+}
 .pagging {
   display: flex;
   align-items: center;
@@ -1216,6 +1222,90 @@ header {
       }
       &:hover {
         box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+}
+
+#Rankings {
+  width: 100%;
+  .titleModule {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .tableContent {
+    margin-bottom: 40px;
+    .chooseSession {
+      width: 250px;
+      height: 30px;
+      float: right;
+    }
+    margin-top: 20px;
+    .group {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .titleGroup {
+        text-align: center;
+        display: block;
+        font-weight: bold;
+        margin-bottom: 15px;
+        font-size: 17px;
+      }
+      .table {
+        width: 1000px;
+        max-width: 100%;
+        thead {
+          background: $color-hover;
+          position: sticky;
+          top: 0;
+          th {
+            text-align: center;
+            color: #fff;
+          }
+        }
+        tbody {
+          tr {
+            td {
+              vertical-align: middle;
+              text-align: center;
+              .nameTeam {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                .icon {
+                  width: 40px;
+                  height: 40px;
+                  background: #fff;
+                  border-radius: 3px;
+                  border: 1px solid #ccc;
+                  padding: 4px;
+                  img {
+                    max-width: 100%;
+                    height: auto;
+                  }
+                }
+                &:hover {
+                  color: $color-hover;
+                }
+              }
+            }
+            &:hover {
+              background: #f2f2f2;
+            }
+          }
+        }
+      }
+    }
+    .note {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 0;
+      > * {
+        width: calc(100% / 5);
       }
     }
   }

@@ -2021,7 +2021,7 @@ header .wrp .right .menu #menu li ul li ul {
   gap: 25px;
 }
 #news.list .group .item {
-  width: calc((100% - 60px) / 3);
+  width: calc((100% - 30px) / 2);
   display: flex;
   gap: 15px;
   align-items: flex-start;
@@ -2052,6 +2052,9 @@ header .wrp .right .menu #menu li ul li ul {
 #news.list .group .item .info .nameCate:hover {
   background: #7ec83b;
 }
+#news.list.nofication .group .item {
+  width: calc((100% - 60px) / 3);
+}
 #news.detail .titleCate {
   text-transform: none;
   margin-bottom: 20px;
@@ -2065,28 +2068,6 @@ header .wrp .right .menu #menu li ul li ul {
   margin-top: 20px;
   font-size: 15px;
   line-height: 26px;
-}
-#news.detail .nextPrevNews {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
-  gap: 50px;
-}
-#news.detail .nextPrevNews > * {
-  flex: 1;
-}
-#news.detail .nextPrevNews > * .title {
-  font-size: 12px;
-  color: #c1c1c1;
-  margin-bottom: 7px;
-}
-#news.detail .nextPrevNews > * .name {
-  font-size: 15px;
-}
-#news.detail .nextPrevNews > *:last-child {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
 }
 #news.detail .other {
   margin-top: 40px;
@@ -2135,6 +2116,29 @@ header .wrp .right .menu #menu li ul li ul {
   margin-top: 10px;
   font-weight: bold;
   line-height: 21px;
+}
+
+.nextPrevNews {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 50px;
+}
+.nextPrevNews > * {
+  flex: 1;
+}
+.nextPrevNews > * .title {
+  font-size: 12px;
+  color: #c1c1c1;
+  margin-bottom: 7px;
+}
+.nextPrevNews > * .name {
+  font-size: 15px;
+}
+.nextPrevNews > *:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .pagging {
@@ -2241,4 +2245,84 @@ header .wrp .right .menu #menu li ul li ul {
 }
 #ListTeam .group .item:hover {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+#Rankings {
+  width: 100%;
+}
+#Rankings .titleModule {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+#Rankings .tableContent {
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+#Rankings .tableContent .chooseSession {
+  width: 250px;
+  height: 30px;
+  float: right;
+}
+#Rankings .tableContent .group {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Rankings .tableContent .group .titleGroup {
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 17px;
+}
+#Rankings .tableContent .group .table {
+  width: 1000px;
+  max-width: 100%;
+}
+#Rankings .tableContent .group .table thead {
+  background: #7ec83b;
+  position: sticky;
+  top: 0;
+}
+#Rankings .tableContent .group .table thead th {
+  text-align: center;
+  color: #fff;
+}
+#Rankings .tableContent .group .table tbody tr td {
+  vertical-align: middle;
+  text-align: center;
+}
+#Rankings .tableContent .group .table tbody tr td .nameTeam {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#Rankings .tableContent .group .table tbody tr td .nameTeam .icon {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  padding: 4px;
+}
+#Rankings .tableContent .group .table tbody tr td .nameTeam .icon img {
+  max-width: 100%;
+  height: auto;
+}
+#Rankings .tableContent .group .table tbody tr td .nameTeam:hover {
+  color: #7ec83b;
+}
+#Rankings .tableContent .group .table tbody tr:hover {
+  background: #f2f2f2;
+}
+#Rankings .tableContent .note {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 0;
+}
+#Rankings .tableContent .note > * {
+  width: 20%;
 }/*# sourceMappingURL=style.css.map */
