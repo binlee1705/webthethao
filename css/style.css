@@ -2055,6 +2055,21 @@ header .wrp .right .menu #menu li ul li ul {
 #news.list.nofication .group .item {
   width: calc((100% - 60px) / 3);
 }
+#news.list.videoList .group .item .wImage img {
+  filter: brightness(80%);
+}
+#news.list.videoList .group .item .wImage:after {
+  content: "\f144";
+  font-family: "FontAwesome";
+  font-weight: 400;
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 20px;
+  pointer-events: none;
+}
 #news.detail .titleCate {
   text-transform: none;
   margin-bottom: 20px;
@@ -2325,4 +2340,135 @@ header .wrp .right .menu #menu li ul li ul {
 }
 #Rankings .tableContent .note > * {
   width: 20%;
+}
+
+#tabCates {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin-top: -36px;
+}
+#tabCates li a {
+  display: flex;
+  height: 36px;
+  padding: 0 20px;
+  border-radius: 5px 5px 0 0;
+  background: #fff;
+  align-items: center;
+  justify-content: center;
+}
+#tabCates li.active a {
+  background: #7ec83b;
+  color: #fff;
+}
+
+#hightLight .parent {
+  margin-bottom: 40px;
+}
+#hightLight .parent .group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+#hightLight .parent .group .item {
+  width: calc((100% - 50px) / 3);
+  position: relative;
+}
+#hightLight .parent .group .item .wImage::before {
+  padding-bottom: 122.6708074534%;
+}
+#hightLight .parent .group .item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgb(0, 0, 0) 100%);
+  z-index: 6;
+}
+#hightLight .parent .group .item::after {
+  content: "\f144";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  pointer-events: none;
+  z-index: 7;
+  font-family: "FontAwesome";
+  font-weight: 300;
+  font-size: 50px;
+  color: #ccc;
+}
+#hightLight .parent .group .item .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 7;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 10px;
+}
+#hightLight .parent .group .item .info .nameCate {
+  padding: 5px 15px;
+  background: #7ec83b;
+  color: #fff;
+  font-size: 12px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+#hightLight .parent .group .item .info .name {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+#hightLight .parent .group .item.colspan2 {
+  width: calc((100% - 50px) / 3 * 2 + 25px);
+}
+#hightLight .parent .group .item.colspan2 .wImage {
+  height: 100%;
+  min-height: 395px;
+}
+#hightLight .parent .group .item.colspan2 .wImage::before {
+  padding-bottom: 0;
+}
+
+#vote .listVote {
+  margin: 40px 0;
+}
+#vote .listVote .title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+#vote .listVote .group {
+  border: 1px solid #dddddd;
+}
+#vote .listVote .group .item {
+  padding: 16px;
+  border-bottom: 1px solid #dddddd;
+}
+#vote .listVote .group .item:last-child {
+  border-bottom: none;
+}
+#vote .listVote .group .item .percent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#vote .listVote .group .item .percent .text {
+  font-size: 12px;
+}
+#vote .listVote .group .item .percent .bar {
+  background: linear-gradient(to right, #2196f3 0%, #1976d2 100%);
+  width: var(--percent);
+  height: 13px;
+  border-radius: 20px;
 }/*# sourceMappingURL=style.css.map */
