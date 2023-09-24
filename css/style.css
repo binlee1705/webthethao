@@ -58,10 +58,10 @@
   background: rgb(255, 255, 255);
 }
 
-#news.detail .other .tabs .tab-contents, #playerRankings .tabs .tab-contents, #charts .tabs .tab-contents {
+#match.detail .tab-contents, #news.detail .other .tabs .tab-contents, #playerRankings .tabs .tab-contents, #charts .tabs .tab-contents {
   position: relative;
 }
-#news.detail .other .tabs .tab-contents .tab:not(.active), #playerRankings .tabs .tab-contents .tab:not(.active), #charts .tabs .tab-contents .tab:not(.active) {
+#match.detail .tab-contents .tab:not(.active), #news.detail .other .tabs .tab-contents .tab:not(.active), #playerRankings .tabs .tab-contents .tab:not(.active), #charts .tabs .tab-contents .tab:not(.active) {
   position: absolute;
   top: 0;
   left: 0;
@@ -2359,7 +2359,7 @@ header .wrp .right .menu #menu li ul li ul {
   align-items: center;
   justify-content: center;
 }
-#tabCates li.active a {
+#tabCates li.active a, #tabCates li:hover a {
   background: #7ec83b;
   color: #fff;
 }
@@ -2575,11 +2575,176 @@ header .wrp .right .menu #menu li ul li ul {
   text-align: center;
   vertical-align: middle;
   border-radius: 3px;
-  margin: auto;
   margin-top: 20px;
 }
 #gallery.list .viewMore:hover {
   background: #7ec83b;
   color: #fff;
   border-color: #7ec83b;
+}
+
+#match {
+  width: 100%;
+}
+#match.detail .nameMatch {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 15px;
+  display: block;
+}
+#match.detail .infoMatch {
+  background: #003059;
+  color: #fff;
+  width: 100%;
+}
+#match.detail .infoMatch .top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  padding: 10px 20px;
+}
+#match.detail .infoMatch .top > p {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+#match.detail .infoMatch .mid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+  border-bottom: 1px solid #fff;
+}
+#match.detail .infoMatch .mid .team {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#match.detail .infoMatch .mid .team .image {
+  background: #fff;
+  border-radius: 4px;
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+}
+#match.detail .infoMatch .mid .team .image img {
+  max-width: 100%;
+}
+#match.detail .infoMatch .mid .team .name {
+  font-weight: bold;
+  font-size: 15px;
+}
+#match.detail .infoMatch .mid .score {
+  font-size: 50px;
+  letter-spacing: 25px;
+  font-weight: 500;
+}
+#match.detail .infoMatch .tab-links {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+}
+#match.detail .infoMatch .tab-links li {
+  flex: 1;
+}
+#match.detail .infoMatch .tab-links li > a {
+  display: block;
+  text-transform: uppercase;
+  padding: 10px 0 5px 0;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom: 3px solid transparent;
+}
+#match.detail .infoMatch .tab-links li.active a {
+  border-bottom: 3px solid #7ec83b;
+}
+#match.detail .tab-contents {
+  margin-bottom: 40px;
+}
+#match.detail .tab-contents .tab {
+  border: 1px solid #003059;
+  padding: 10px;
+}
+#match.detail .tab-contents .tab .titleDiv {
+  text-transform: uppercase;
+  background: #003059;
+  color: #fff;
+  font-weight: bold;
+  padding: 7px 15px 5px 15px;
+}
+#match.detail .tab-contents .tab .playerStatistics {
+  margin: 20px 0;
+  border: 1px solid #003059;
+}
+#match.detail .tab-contents .tab .playerStatistics .teamMath {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+#match.detail .tab-contents .tab .playerStatistics .teamMath .team {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#match.detail .tab-contents .tab .playerStatistics .teamMath .team .image {
+  background: #fff;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+#match.detail .tab-contents .tab .playerStatistics .teamMath .team .image img {
+  max-width: 100%;
+}
+#match.detail .tab-contents .tab .playerStatistics .teamMath .team .name {
+  font-size: 14px;
+}
+#match.detail .tab-contents .tab .playerStatistics .content .tableContent {
+  table-layout: fixed;
+}
+#match.detail .tab-contents .tab .playerStatistics .content .tableContent td:nth-child(2), #match.detail .tab-contents .tab .playerStatistics .content .tableContent td:nth-child(3), #match.detail .tab-contents .tab .playerStatistics .content .tableContent td:nth-child(4) {
+  width: 110px;
+}
+#match.detail .tab-contents .tab .playerStatistics .content .tableContent td:nth-child(1), #match.detail .tab-contents .tab .playerStatistics .content .tableContent td:nth-child(2), #match.detail .tab-contents .tab .playerStatistics .content .tableContent td:nth-child(4), #match.detail .tab-contents .tab .playerStatistics .content .tableContent td:nth-child(5) {
+  border: none;
+}
+#match.detail .tab-contents .tab .otherInfomation .noidung {
+  border: 1px solid #003059;
+  padding: 10px;
+}
+#match.detail .tab-contents .tab .squad {
+  display: flex;
+  gap: 40px;
+}
+#match.detail .tab-contents .tab .squad .group {
+  flex: 1;
+}
+#match.detail .tab-contents .tab .squad .group .table {
+  margin-top: 10px;
+  table-layout: fixed;
+}
+#match.detail .tab-contents .tab .squad .group .table td {
+  text-align: center;
+  vertical-align: middle;
+}
+#match.detail .tab-contents .tab .squad .group .table td:nth-child(1), #match.detail .tab-contents .tab .squad .group .table td:nth-child(2), #match.detail .tab-contents .tab .squad .group .table td:nth-child(4) {
+  width: 70px;
+}
+#match.detail .tab-contents .tab .squad .group .table td:nth-child(3) {
+  text-align: left;
+}
+#match.detail .tab-contents .tab .squad .group .table td .image {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 4px;
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+#match.detail .tab-contents .tab .squad .group .table td .image img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
