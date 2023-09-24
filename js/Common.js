@@ -186,6 +186,14 @@ $(document).ready(() => {
       )
     );
   });
+  $(".btnSearchPage").click(function () {
+    if ($(this).hasClass("active")) {
+      $("#menu .divSearchPage").slideUp();
+    } else {
+      $("#menu .divSearchPage").slideDown();
+    }
+    $(this).toggleClass("active");
+  });
 });
 $(window).scroll(function () {
   var scrollTop = $(window).scrollTop();

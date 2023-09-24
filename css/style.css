@@ -1244,16 +1244,19 @@ header .wrp .right .menu #menu > li {
   font-size: 16px;
   font-weight: 700;
 }
+header .wrp .right .menu #menu > li > a {
+  width: 100%;
+}
 header .wrp .right .menu #menu li {
   position: relative;
   flex: auto;
-  display: flex;
   padding: 20px 0;
 }
 header .wrp .right .menu #menu li a {
   display: flex;
   text-align: center;
   align-items: center;
+  justify-content: center;
 }
 header .wrp .right .menu #menu li:hover > a {
   color: #7ec83b;
@@ -1351,6 +1354,10 @@ header .wrp .right .menu #menu .menuSub .menuRight .group .item .nameCate {
   line-height: 16px;
   font-family: Roboto;
 }
+header .wrp .right .menu #menu .menuSub .menuRight .group .item .nameCate:hover, header .wrp .right .menu #menu .menuSub .menuRight .group .item .nameCate.active {
+  background: #7ec83b;
+  color: #fff;
+}
 header .wrp .right .menu #menu .menuSub .menuRight .group .item .name {
   color: #000;
   font-size: 14px;
@@ -1358,6 +1365,9 @@ header .wrp .right .menu #menu .menuSub .menuRight .group .item .name {
   line-height: 18px;
   display: block;
   margin-top: 7px;
+}
+header .wrp .right .menu #menu .menuSub .menuRight .group .item .name:hover {
+  color: #7ec83b;
 }
 header .wrp .right .menu #menu .menuSub .menuRight .btnNav {
   display: flex;
@@ -1379,6 +1389,33 @@ header .wrp .right .menu #menu .menuSub .menuRight .btnNav a:hover {
   background: #7ec83b;
   color: #fff;
   border-color: #7ec83b;
+}
+header .wrp .right .menu #menu .btnSearchPage {
+  text-align: center;
+}
+header .wrp .right .menu #menu .btnSearchPage.active i::before {
+  content: "\f00d";
+}
+header .wrp .right .menu #menu .divSearchPage {
+  display: none;
+  position: absolute;
+  top: 100%;
+  min-width: 300px;
+  right: 0;
+  z-index: 7;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+header .wrp .right .menu #menu .divSearchPage input {
+  width: 100%;
+  border: none;
+  height: 35px;
+  padding: 0 10px;
+  font-family: Roboto;
+  font-size: 13px;
+  outline: none;
 }
 
 #session {
