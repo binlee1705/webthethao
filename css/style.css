@@ -58,10 +58,10 @@
   background: rgb(255, 255, 255);
 }
 
-#match.detail .tab-contents, #news.detail .other .tabs .tab-contents, #playerRankings .tabs .tab-contents, #charts .tabs .tab-contents {
+#player .tabs .tab-contents, #teamDetails .tabs .tab-contents, #match.detail .tab-contents, #news.detail .other .tabs .tab-contents, #playerRankings .tabs .tab-contents, #charts .tabs .tab-contents {
   position: relative;
 }
-#match.detail .tab-contents .tab:not(.active), #news.detail .other .tabs .tab-contents .tab:not(.active), #playerRankings .tabs .tab-contents .tab:not(.active), #charts .tabs .tab-contents .tab:not(.active) {
+#player .tabs .tab-contents .tab:not(.active), #teamDetails .tabs .tab-contents .tab:not(.active), #match.detail .tab-contents .tab:not(.active), #news.detail .other .tabs .tab-contents .tab:not(.active), #playerRankings .tabs .tab-contents .tab:not(.active), #charts .tabs .tab-contents .tab:not(.active) {
   position: absolute;
   top: 0;
   left: 0;
@@ -2149,6 +2149,7 @@ header .wrp .right .menu #menu li ul li ul {
 }
 .nextPrevNews > * .name {
   font-size: 15px;
+  line-height: 23px;
 }
 .nextPrevNews > *:last-child {
   display: flex;
@@ -2747,4 +2748,189 @@ header .wrp .right .menu #menu li ul li ul {
 }
 #match.detail .tab-contents .tab .squad .group .table td .image img {
   width: 100%;
+}
+
+#teamDetails {
+  width: 100%;
+}
+#teamDetails .top {
+  display: flex;
+  align-items: center;
+}
+#teamDetails .top .logo {
+  padding-right: 15px;
+  border-right: 1px solid #ccc;
+}
+#teamDetails .top .logo img {
+  width: 183px;
+  height: auto;
+}
+#teamDetails .top .stadium {
+  flex: 1;
+  padding-left: 30px;
+}
+#teamDetails .top .stadium .nameTeam {
+  font-size: 30px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 20px;
+}
+#teamDetails .top .stadium .afterName {
+  display: flex;
+}
+#teamDetails .top .stadium .afterName .item {
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+  display: flex;
+}
+#teamDetails .top .stadium .afterName .item .text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 18px;
+}
+#teamDetails .tabs {
+  margin-top: 40px;
+}
+#teamDetails .tabs .tab-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  background: #003059;
+}
+#teamDetails .tabs .tab-links li {
+  flex: 1;
+}
+#teamDetails .tabs .tab-links li a {
+  text-transform: uppercase;
+  padding: 10px 0;
+  text-align: center;
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+  color: #fff;
+}
+#teamDetails .tabs .tab-links li.active a {
+  background: #7ec83b;
+}
+#teamDetails .tabs .tab-contents {
+  width: 100%;
+  border: 1px solid #003059;
+  border-top: none;
+  padding: 20px;
+}
+#teamDetails .tabs .tab-contents .table {
+  margin-top: 20px;
+}
+#teamDetails .tabs .tab-contents .table thead {
+  background: #003059;
+  color: #fff;
+  position: sticky;
+  top: 0;
+}
+#teamDetails .tabs .tab-contents .table thead th {
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+#teamDetails .tabs .tab-contents .table tbody td {
+  min-width: 70px;
+  vertical-align: middle;
+  text-align: center;
+}
+#teamDetails .tabs .tab-contents .table tbody td .player {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+#teamDetails .tabs .tab-contents .table tbody td .player .image {
+  width: 40px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 4px;
+  border-radius: 3px;
+}
+
+#player {
+  width: 100%;
+}
+#player .namePlayer {
+  font-weight: bold;
+  font-size: 30px;
+  display: block;
+  margin-bottom: 20px;
+}
+#player .tabs .tab-links {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+#player .tabs .tab-links li {
+  flex: 1;
+}
+#player .tabs .tab-links li a {
+  display: block;
+  text-align: center;
+  padding: 7px 10px;
+  background: #003059;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+#player .tabs .tab-links li.active a {
+  background-color: #7ec83b;
+}
+#player .tabs .tab-contents {
+  margin: 20px 0 40px 0;
+}
+#player .tabs .tab-contents .tablestatistic {
+  table-layout: fixed;
+}
+#player .tabs .tab-contents .tablestatistic td {
+  vertical-align: middle;
+  text-align: center;
+}
+#player .tabs .tab-contents .tablestatistic td:nth-child(1) {
+  width: 500px;
+  text-align: left;
+}
+#player .tabs .tab-contents .tablestatistic td:nth-child(1) img {
+  margin-right: 10px;
+}
+#player .tabs .tab-contents .tableMatch td {
+  text-align: center;
+  vertical-align: middle;
+}
+#player .tabs .tab-contents .infoPlayer {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+#player .tabs .tab-contents .infoPlayer .image {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+#player .tabs .tab-contents .infoPlayer .image img {
+  width: 250px;
+}
+#player .tabs .tab-contents .infoPlayer .right {
+  flex: 1;
+}
+#player .tabs .tab-contents .infoPlayer .right .table {
+  width: auto;
+}
+#player .tabs .tab-contents .infoPlayer .right .table td:nth-child(1) {
+  width: 150px;
+}
+#player .tabs .tab-contents .infoPlayer .right .table td:nth-child(2) {
+  min-width: 200px;
+}
+#player .tabs .tab-contents .infoPlayer .right .table td:nth-child(2)::before {
+  content: ":";
+  margin-right: 10px;
 }/*# sourceMappingURL=style.css.map */

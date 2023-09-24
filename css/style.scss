@@ -1133,6 +1133,7 @@ header {
     }
     .name {
       font-size: 15px;
+      line-height: 23px;
     }
     &:last-child {
       display: flex;
@@ -1772,6 +1773,201 @@ header {
                     width: 100%;
                   }
                 }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#teamDetails {
+  width: 100%;
+  .top {
+    display: flex;
+    align-items: center;
+    .logo {
+      padding-right: 15px;
+      border-right: 1px solid #ccc;
+      img {
+        width: 183px;
+        height: auto;
+      }
+    }
+    .stadium {
+      flex: 1;
+      padding-left: 30px;
+      .nameTeam {
+        font-size: 30px;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 20px;
+      }
+      .afterName {
+        display: flex;
+        .item {
+          align-items: center;
+          gap: 20px;
+          flex: 1;
+          display: flex;
+          .text {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+  .tabs {
+    margin-top: 40px;
+    .tab-links {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      background: $color-main;
+      li {
+        flex: 1;
+        a {
+          text-transform: uppercase;
+          padding: 10px 0;
+          text-align: center;
+          display: block;
+          font-size: 17px;
+          font-weight: 500;
+          color: #fff;
+        }
+        &.active {
+          a {
+            background: $color-hover;
+          }
+        }
+      }
+    }
+    .tab-contents {
+      width: 100%;
+      @extend %tabContent;
+      border: 1px solid $color-main;
+      border-top: none;
+      padding: 20px;
+      .table {
+        margin-top: 20px;
+        thead {
+          background: $color-main;
+          color: #fff;
+          position: sticky;
+          top: 0;
+          th {
+            text-align: center;
+            vertical-align: middle;
+            white-space: nowrap;
+          }
+        }
+        tbody {
+          td {
+            min-width: 70px;
+            vertical-align: middle;
+            text-align: center;
+            .player {
+              display: flex;
+              align-items: center;
+              gap: 7px;
+              .image {
+                width: 40px;
+                background: #fff;
+                border: 1px solid #ccc;
+                padding: 4px;
+                border-radius: 3px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#player {
+  width: 100%;
+  .namePlayer {
+    font-weight: bold;
+    font-size: 30px;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .tabs {
+    .tab-links {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      li {
+        flex: 1;
+        a {
+          display: block;
+          text-align: center;
+          padding: 7px 10px;
+          background: $color-main;
+          color: #fff;
+          text-transform: uppercase;
+          font-weight: 500;
+        }
+        &.active a {
+          background-color: $color-hover;
+        }
+      }
+    }
+    .tab-contents {
+      @extend %tabContent;
+      margin: 20px 0 40px 0;
+      .tablestatistic {
+        table-layout: fixed;
+        td {
+          vertical-align: middle;
+          text-align: center;
+          &:nth-child(1) {
+            width: 500px;
+            text-align: left;
+            img {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+      .tableMatch {
+        td {
+          text-align: center;
+          vertical-align: middle;
+        }
+      }
+      .infoPlayer {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        .image {
+          border: 1px solid #ccc;
+          padding: 10px;
+          border-radius: 5px;
+          overflow: hidden;
+          img {
+            width: 250px;
+          }
+        }
+        .right {
+          flex: 1;
+          .table {
+            width: auto;
+            td:nth-child(1) {
+              width: 150px;
+            }
+            td:nth-child(2) {
+              min-width: 200px;
+              &::before {
+                content: ":";
+                margin-right: 10px;
               }
             }
           }
