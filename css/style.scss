@@ -35,6 +35,9 @@ body {
 img {
   transition: 0.3s all ease-in-out;
 }
+a:hover {
+  text-decoration: underline;
+}
 .noidung {
   padding: 0;
   a {
@@ -86,11 +89,16 @@ header {
         }
       }
       .menu {
+        position: relative;
         display: flex;
+        align-items: center;
         background: $color-main;
         color: #fff;
-        padding: 10px 20px;
+        padding: 0 20px;
         gap: 40px;
+        a:hover {
+          text-decoration: none;
+        }
         .text {
           line-height: 24px;
           p:first-child {
@@ -116,6 +124,7 @@ header {
             position: relative;
             flex: auto;
             display: flex;
+            padding: 20px 0;
             a {
               display: flex;
               text-align: center;
@@ -127,7 +136,9 @@ header {
             &:hover > ul {
               display: block;
             }
-
+            &:hover > .menuSub {
+              display: flex;
+            }
             ul {
               position: relative;
               display: none;
@@ -136,22 +147,14 @@ header {
               margin: 0;
               background: #fff;
               position: absolute;
-              top: calc(100% + 10px);
+              top: 100%;
               left: -10px;
               z-index: 2;
               color: #000;
               min-width: 200px;
               box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-              &::before {
-                content: "";
-                display: block;
-                position: absolute;
-                top: -10px;
-                left: 0;
-                width: 100%;
-                height: 10px;
-              }
               li {
+                padding: 0;
                 a {
                   padding: 7px 15px;
                   font-weight: normal;
@@ -167,6 +170,91 @@ header {
                 ul {
                   top: 0;
                   left: 100%;
+                }
+              }
+            }
+          }
+          .menuSub {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            z-index: 7;
+            .menuLeft {
+              width: 250px;
+              height: 300px;
+              overflow-y: auto;
+              background: #fafafa;
+              .itemLink {
+                color: #000;
+                font-weight: 700;
+                text-align: right;
+                display: block;
+                font-size: 13px;
+                padding: 7px 10px;
+                line-height: 18px;
+                &:hover,
+                &.active {
+                  background: $color-hover;
+                  color: #fff;
+                }
+              }
+            }
+            .menuRight {
+              flex: 1;
+              padding: 20px;
+              .group {
+                display: flex;
+                gap: 20px;
+                .item {
+                  width: calc((100% - 60px) / 4);
+                  .wImage {
+                    &::before {
+                      padding-bottom: wImage(135, 196);
+                    }
+                  }
+                  .nameCate {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    padding: 5px 15px;
+                    background: $color-main;
+                    color: #fff;
+                    font-size: 11px;
+                    line-height: 16px;
+                    font-family: Roboto;
+                  }
+                  .name {
+                    color: #000;
+                    font-size: 14px;
+                    text-align: left;
+                    line-height: 18px;
+                    display: block;
+                    margin-top: 7px;
+                  }
+                }
+              }
+              .btnNav {
+                display: flex;
+                gap: 10px;
+                margin-top: 15px;
+                a {
+                  width: 25px;
+                  height: 25px;
+                  border: 1px solid #ccc;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: #ccc;
+                  font-size: 13px;
+                  border-radius: 2px;
+                  &:hover {
+                    background: $color-hover;
+                    color: #fff;
+                    border-color: $color-hover;
+                  }
                 }
               }
             }
@@ -2077,5 +2165,43 @@ select {
         }
       }
     }
+  }
+}
+
+#goaltatistics {
+  width: 100%;
+  .nameGoalStatistics {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: block;
+  }
+  .table {
+    table-layout: fixed;
+    thead {
+      position: sticky;
+      top: 0;
+    }
+    td {
+      vertical-align: middle;
+    }
+  }
+}
+#bttop {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  background: #ccc;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    text-decoration: none;
+    background: $color-hover;
+    color: #fff;
   }
 }

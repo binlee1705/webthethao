@@ -69,7 +69,7 @@ function owlslide(
 }
 function scrollHead(event) {
   event.preventDefault();
-  $("body,html").animate({ scrollTop: 0 }, 1600);
+  $("body,html").animate({ scrollTop: 0 }, 1000);
 }
 $(document).ready(() => {
   $("#bttop").click(function (e) {

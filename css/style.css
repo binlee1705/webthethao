@@ -1156,6 +1156,10 @@ img {
   transition: 0.3s all ease-in-out;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 .noidung {
   padding: 0;
 }
@@ -1207,11 +1211,16 @@ header .wrp .right .listTeam a.logoTeam img {
   height: auto;
 }
 header .wrp .right .menu {
+  position: relative;
   display: flex;
+  align-items: center;
   background: #003059;
   color: #fff;
-  padding: 10px 20px;
+  padding: 0 20px;
   gap: 40px;
+}
+header .wrp .right .menu a:hover {
+  text-decoration: none;
 }
 header .wrp .right .menu .text {
   line-height: 24px;
@@ -1239,6 +1248,7 @@ header .wrp .right .menu #menu li {
   position: relative;
   flex: auto;
   display: flex;
+  padding: 20px 0;
 }
 header .wrp .right .menu #menu li a {
   display: flex;
@@ -1251,6 +1261,9 @@ header .wrp .right .menu #menu li:hover > a {
 header .wrp .right .menu #menu li:hover > ul {
   display: block;
 }
+header .wrp .right .menu #menu li:hover > .menuSub {
+  display: flex;
+}
 header .wrp .right .menu #menu li ul {
   position: relative;
   display: none;
@@ -1259,21 +1272,15 @@ header .wrp .right .menu #menu li ul {
   margin: 0;
   background: #fff;
   position: absolute;
-  top: calc(100% + 10px);
+  top: 100%;
   left: -10px;
   z-index: 2;
   color: #000;
   min-width: 200px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-header .wrp .right .menu #menu li ul::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -10px;
-  left: 0;
-  width: 100%;
-  height: 10px;
+header .wrp .right .menu #menu li ul li {
+  padding: 0;
 }
 header .wrp .right .menu #menu li ul li a {
   padding: 7px 15px;
@@ -1290,6 +1297,88 @@ header .wrp .right .menu #menu li ul li:hover > a {
 header .wrp .right .menu #menu li ul li ul {
   top: 0;
   left: 100%;
+}
+header .wrp .right .menu #menu .menuSub {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 7;
+}
+header .wrp .right .menu #menu .menuSub .menuLeft {
+  width: 250px;
+  height: 300px;
+  overflow-y: auto;
+  background: #fafafa;
+}
+header .wrp .right .menu #menu .menuSub .menuLeft .itemLink {
+  color: #000;
+  font-weight: 700;
+  text-align: right;
+  display: block;
+  font-size: 13px;
+  padding: 7px 10px;
+  line-height: 18px;
+}
+header .wrp .right .menu #menu .menuSub .menuLeft .itemLink:hover, header .wrp .right .menu #menu .menuSub .menuLeft .itemLink.active {
+  background: #7ec83b;
+  color: #fff;
+}
+header .wrp .right .menu #menu .menuSub .menuRight {
+  flex: 1;
+  padding: 20px;
+}
+header .wrp .right .menu #menu .menuSub .menuRight .group {
+  display: flex;
+  gap: 20px;
+}
+header .wrp .right .menu #menu .menuSub .menuRight .group .item {
+  width: calc((100% - 60px) / 4);
+}
+header .wrp .right .menu #menu .menuSub .menuRight .group .item .wImage::before {
+  padding-bottom: 68.8775510204%;
+}
+header .wrp .right .menu #menu .menuSub .menuRight .group .item .nameCate {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 5px 15px;
+  background: #003059;
+  color: #fff;
+  font-size: 11px;
+  line-height: 16px;
+  font-family: Roboto;
+}
+header .wrp .right .menu #menu .menuSub .menuRight .group .item .name {
+  color: #000;
+  font-size: 14px;
+  text-align: left;
+  line-height: 18px;
+  display: block;
+  margin-top: 7px;
+}
+header .wrp .right .menu #menu .menuSub .menuRight .btnNav {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+header .wrp .right .menu #menu .menuSub .menuRight .btnNav a {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+  font-size: 13px;
+  border-radius: 2px;
+}
+header .wrp .right .menu #menu .menuSub .menuRight .btnNav a:hover {
+  background: #7ec83b;
+  color: #fff;
+  border-color: #7ec83b;
 }
 
 #session {
@@ -3033,4 +3122,43 @@ select {
 }
 #schedule .round .group .table-responsive .table td:nth-child(5) {
   width: 90px;
+}
+
+#goaltatistics {
+  width: 100%;
+}
+#goaltatistics .nameGoalStatistics {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  display: block;
+}
+#goaltatistics .table {
+  table-layout: fixed;
+}
+#goaltatistics .table thead {
+  position: sticky;
+  top: 0;
+}
+#goaltatistics .table td {
+  vertical-align: middle;
+}
+
+#bttop {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  background: #ccc;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#bttop:hover {
+  text-decoration: none;
+  background: #7ec83b;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
