@@ -187,6 +187,14 @@ $(document).ready(() => {
     );
   });
 });
+$(window).scroll(function () {
+  var scrollTop = $(window).scrollTop();
+  if (scrollTop > 600) {
+    $("#bttop").fadeIn();
+  } else {
+    if (scrollTop == 0) $("#bttop").fadeOut();
+  }
+});
 
 function preventScroll(e) {
   e.preventDefault();
