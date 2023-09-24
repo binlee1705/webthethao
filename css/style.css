@@ -1713,7 +1713,7 @@ header .wrp .right .menu #menu .menuSub .menuRight .btnNav a:hover {
 }
 #charts .tabs .tab-contents .viewDetail {
   display: block;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 5px;
   padding: 7px 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -3156,6 +3156,7 @@ select {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 10;
 }
 #bttop:hover {
   text-decoration: none;
