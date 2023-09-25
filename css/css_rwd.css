@@ -4,11 +4,13 @@
     display: block;
     width: 2.5rem;
     margin-left: 0.9375rem;
+    position: relative;
+    z-index: 22;
   }
   .openList hr {
     -moz-transition: 0.5s all ease-in-out;
-    background: #333;
-    border: 1px solid #333;
+    background: #fff;
+    border: 1px solid #fff;
     transition: 0.5s all ease-in-out;
     z-index: 98;
     opacity: 1;
@@ -30,12 +32,187 @@
   .openList.ac hr:nth-child(1) {
     background: #fff;
     border-color: #fff;
-    transform: rotate(135deg) translateX(2px) translateY(-8px);
+    transform: rotate(135deg) translateX(3px) translateY(-9px);
   }
   .openList.ac hr:nth-child(3) {
     background: #fff;
     border-color: #fff;
     transform: rotate(-135deg) translateX(7px) translateY(14px);
+  }
+  #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 20;
+    display: none;
+  }
+  header {
+    position: relative;
+  }
+  header .wrp .right .menu {
+    padding: 10px 20px;
+  }
+  header .wrp .right .menu #menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    overflow-y: auto;
+    background: #003059;
+    height: 100vh;
+    width: 80vw;
+    z-index: 21;
+    transition: 0.3s all ease-in-out;
+    display: block;
+    padding: 1.25rem 0;
+    transition: 0.3s all ease-in-out;
+  }
+  header .wrp .right .menu #menu.active {
+    left: 0;
+  }
+  header .wrp .right .menu #menu .openSub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.125rem;
+    font-size: 1.25rem;
+    color: #fff;
+  }
+  header .wrp .right .menu #menu .openSub.ac i:before {
+    content: "\f106";
+  }
+  header .wrp .right .menu #menu li {
+    display: flex;
+    padding: 0;
+    position: relative !important;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  header .wrp .right .menu #menu li.active {
+    background: #7ec83b !important;
+    color: #fff !important;
+  }
+  header .wrp .right .menu #menu li a {
+    background: transparent !important;
+    display: flex;
+    padding: 0.625rem 1.375rem;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    border-right: none;
+    flex: 1;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 14px;
+  }
+  header .wrp .right .menu #menu li:hover > ul,
+  header .wrp .right .menu #menu li:hover .menuSub {
+    display: none;
+  }
+  header .wrp .right .menu #menu li:hover > a {
+    background: transparent;
+    color: #fff;
+  }
+  header .wrp .right .menu #menu li ul {
+    text-transform: none;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: all;
+    padding: 0;
+    padding-left: 1.25rem;
+    transition: none;
+    height: auto;
+    display: none;
+    width: 100%;
+    position: static;
+    background: transparent;
+    box-shadow: none;
+  }
+  header .wrp .right .menu #menu li ul li a {
+    color: #fff;
+    padding: 0.625rem;
+    white-space: normal;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 14px;
+  }
+  header .wrp .right .menu #menu li ul li a > i {
+    display: none;
+  }
+  header .wrp .right .menu #menu li .toggleSearch {
+    display: none;
+  }
+  header .wrp .right .menu #menu li .menuSub {
+    position: static;
+  }
+  header .wrp .right .menu #menu li .menuSub .menuLeft {
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+  }
+  header .wrp .right .menu #menu li .menuSub .menuLeft .itemLink {
+    display: table-cell;
+    white-space: nowrap;
+    text-align: left;
+    font-size: 15px;
+  }
+  header .wrp .right .menu #menu li .menuSub .menuLeft .itemLink:hover, header .wrp .right .menu #menu li .menuSub .menuLeft .itemLink.active {
+    color: #7ec83b;
+  }
+  header .wrp .right .menu #menu li .menuSub .menuRight {
+    padding: 10px 0;
+  }
+  header .wrp .right .menu #menu li .menuSub .menuRight .group {
+    display: block;
+    border-spacing: 15px 20px;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  header .wrp .right .menu #menu li .menuSub .menuRight .group .item {
+    margin-right: 20px;
+    display: table-cell;
+    min-width: 230px;
+  }
+  header .wrp .right .menu #menu li .menuSub .menuRight .group .item .name {
+    padding: 0;
+  }
+  header .wrp .right .menu #menu li .menuSub .btnNav {
+    justify-content: center;
+  }
+  header .wrp .right .menu #menu li .menuSub .btnNav a {
+    flex: none;
+    padding: 0;
+  }
+  header .wrp .right .menu #menu li:last-child {
+    position: sticky !important;
+    bottom: 0;
+  }
+  header .wrp .right .menu #menu.ac {
+    left: 0;
+  }
+  header .wrp .right .menu #menu .btnSearchPage {
+    display: none;
+  }
+  header .wrp .right .menu #menu .divSearchPage {
+    margin: 0 10px;
+    display: flex !important;
+    position: static;
+    opacity: 1 !important;
+    margin-top: 0.625rem;
+    width: 100%;
+  }
+  header .wrp .right .menu #menu .divSearchPage input {
+    flex: 1;
+  }
+  header .wrp .right .menu #menu .divSearchPage .btn_divSearchPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 50px;
+    flex: none;
   }
   .wrp {
     max-width: calc(100vw - 2.5rem);
@@ -303,6 +480,20 @@
   }
 }
 @media (max-width: 479px) {
+  header {
+    padding-top: 20px;
+  }
+  header .wrp {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  header .wrp .right {
+    width: 100%;
+    flex-direction: column-reverse;
+    display: flex;
+  }
   #latestNews .group .item {
     width: 100%;
   }

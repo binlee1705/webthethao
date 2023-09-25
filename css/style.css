@@ -1214,6 +1214,7 @@ header .wrp .right .menu {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background: #003059;
   color: #fff;
   padding: 0 20px;
@@ -3239,4 +3240,10 @@ select {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.openList,
+.openSub,
+.btn_divSearchPage {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

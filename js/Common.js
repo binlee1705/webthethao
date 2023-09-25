@@ -87,6 +87,7 @@ $(document).ready(() => {
   });
   $(".openSub").click(function () {
     $(this).next("ul").fadeToggle();
+    $(this).next(".menuSub").fadeToggle();
     $(this).toggleClass("ac");
     $(this).parents("li").toggleClass("ac");
   });

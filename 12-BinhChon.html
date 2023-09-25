@@ -94,12 +94,20 @@
             <p>OFFICIAL WEBSITE OF</p>
             <p>Viet Sports</p>
           </div>
+          <a href="javascript://" class="openList">
+            <hr />
+            <hr />
+            <hr />
+          </a>
           <ul id="menu">
             <li><a href="#" title="#">Trang chủ </a></li>
             <li><a href="#" title="#">VPF</a></li>
             <!--Những menu nào dùng menuSub thì li set: position: static-->
             <li style="position: static">
               <a href="#" title="#">Hightlight</a>
+              <span class="openSub">
+                <i class="far fa-angle-down"></i>
+              </span>
               <div class="menuSub">
                 <div class="menuLeft">
                   <!--Dùng js để load dữ liệu cột phải khi hover vào menu bên trái. Hover đến đâu chuyển class active đến đó-->
@@ -170,9 +178,15 @@
             <li><a href="#" title="#">Hạng nhất quốc gia</a></li>
             <li>
               <a href="#" title="#">Cúp quốc gia</a>
+              <span class="openSub">
+                <i class="far fa-angle-down"></i>
+              </span>
               <ul>
                 <li class="">
                   <a href="#">Lịch thi đấu và Kết quả</a>
+                  <span class="openSub">
+                    <i class="far fa-angle-down"></i>
+                  </span>
                   <ul>
                     <li class=""><a href="#">Lịch thi đấu và Kết quả</a></li>
                     <li class=""><a href="#">Bảng xếp hạng</a></li>
@@ -200,9 +214,11 @@
               </a>
               <div class="divSearchPage">
                 <input type="search" placeholder="Nhập từ khoá tìm kiếm..." />
+                <a href="#" title="" class="btn_divSearchPage">Tìm</a>
               </div>
             </li>
           </ul>
+          <div id="overlay"></div>
         </div>
       </div>
     </div>

@@ -94,12 +94,20 @@
             <p>OFFICIAL WEBSITE OF</p>
             <p>Viet Sports</p>
           </div>
+          <a href="javascript://" class="openList">
+            <hr />
+            <hr />
+            <hr />
+          </a>
           <ul id="menu">
             <li><a href="#" title="#">Trang chủ </a></li>
             <li><a href="#" title="#">VPF</a></li>
             <!--Những menu nào dùng menuSub thì li set: position: static-->
             <li style="position: static">
               <a href="#" title="#">Hightlight</a>
+              <span class="openSub">
+                <i class="far fa-angle-down"></i>
+              </span>
               <div class="menuSub">
                 <div class="menuLeft">
                   <!--Dùng js để load dữ liệu cột phải khi hover vào menu bên trái. Hover đến đâu chuyển class active đến đó-->
@@ -170,9 +178,15 @@
             <li><a href="#" title="#">Hạng nhất quốc gia</a></li>
             <li>
               <a href="#" title="#">Cúp quốc gia</a>
+              <span class="openSub">
+                <i class="far fa-angle-down"></i>
+              </span>
               <ul>
                 <li class="">
                   <a href="#">Lịch thi đấu và Kết quả</a>
+                  <span class="openSub">
+                    <i class="far fa-angle-down"></i>
+                  </span>
                   <ul>
                     <li class=""><a href="#">Lịch thi đấu và Kết quả</a></li>
                     <li class=""><a href="#">Bảng xếp hạng</a></li>
@@ -200,9 +214,11 @@
               </a>
               <div class="divSearchPage">
                 <input type="search" placeholder="Nhập từ khoá tìm kiếm..." />
+                <a href="#" title="" class="btn_divSearchPage">Tìm</a>
               </div>
             </li>
           </ul>
+          <div id="overlay"></div>
         </div>
       </div>
     </div>
@@ -1307,184 +1323,185 @@
         <div id="pageFacebook">
 
         </div>
-        <div class="youtube">
-          <a class="logo">
-            <img src="./css/icon/Logo.png" alt="" />
-            <span class="text">VPF Media</span>
+      </div>
+      <div class="youtube">
+        <a class="logo">
+          <img src="./css/icon/Logo.png" alt="" />
+          <span class="text">VPF Media</span>
+        </a>
+        <div class="iFrame">
+          <iframe width="100%" height="500" src="https://www.youtube.com/embed/yFStOS1NiD0?si=KRGC8-Hs22y_UFLz"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <a href="" title="" class="linkTag">VPF Media | Nhanh hơn, cao hơn, xa hơn Night Wolf V.League 1 –
+          2022.</a>
+      </div>
+      <div id="slideBanner">
+        <div class="commonSlideBanner owl-carousel">
+          <a href="" class="commonBanner">
+            <img src="./pic/p1.jpg" alt="" loading="lazy" />
           </a>
-          <div class="iFrame">
-            <iframe width="100%" height="500" src="https://www.youtube.com/embed/yFStOS1NiD0?si=KRGC8-Hs22y_UFLz"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
-          </div>
-          <a href="" title="" class="linkTag">VPF Media | Nhanh hơn, cao hơn, xa hơn Night Wolf V.League 1 –
-            2022.</a>
-        </div>
-        <div id="slideBanner">
-          <div class="commonSlideBanner owl-carousel">
-            <a href="" class="commonBanner">
-              <img src="./pic/p1.jpg" alt="" loading="lazy" />
-            </a>
-            <a href="" class="commonBanner">
-              <img src="./pic/p2.png" alt="" loading="lazy" />
-            </a>
-            <a href="" class="commonBanner">
-              <img src="./pic/p3.jpg" alt="" loading="lazy" />
-            </a>
-          </div>
+          <a href="" class="commonBanner">
+            <img src="./pic/p2.png" alt="" loading="lazy" />
+          </a>
+          <a href="" class="commonBanner">
+            <img src="./pic/p3.jpg" alt="" loading="lazy" />
+          </a>
         </div>
       </div>
     </div>
-    <section id="donors">
-      <div class="wrp">
-        <div class="parent">
-          <p class="title">TÀI TRỢ CHÍNH</p>
-          <div class="group">
-            <a href="#" title="">
-              <img src="./pic/sam-ngoc-link-2k3.png" loading="lazy" title="" />
-            </a>
-            <a href="#" title="">
-              <img src="./pic/2023_VL2_bia_sao_vang_new.png" loading="lazy" title="" />
-            </a>
-          </div>
-        </div>
-        <div class="parent">
-          <p class="title">TÀI TRỢ ĐỒNG HÀNH</p>
-          <div class="group">
-            <a href="#" title="">
-              <img src="./pic/fpt-play-2k3.png" loading="lazy" title="" />
-            </a>
-            <a href="#" title="">
-              <img src="./pic/dong-luc-2k3.png" loading="lazy" title="" />
-            </a>
-            <a href="#" title="">
-              <img src="./pic/2023-pti.png" loading="lazy" title="" />
-            </a>
-          </div>
+  </div>
+  <section id="donors">
+    <div class="wrp">
+      <div class="parent">
+        <p class="title">TÀI TRỢ CHÍNH</p>
+        <div class="group">
+          <a href="#" title="">
+            <img src="./pic/sam-ngoc-link-2k3.png" loading="lazy" title="" />
+          </a>
+          <a href="#" title="">
+            <img src="./pic/2023_VL2_bia_sao_vang_new.png" loading="lazy" title="" />
+          </a>
         </div>
       </div>
-    </section>
-    <div id="listSocial">
-      <div class="wrp">
-        <a href="" title="" class="item" target="_blank">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="" title="" class="item" target="_blank">
-          <i class="fab fa-youtube"></i>
-        </a>
+      <div class="parent">
+        <p class="title">TÀI TRỢ ĐỒNG HÀNH</p>
+        <div class="group">
+          <a href="#" title="">
+            <img src="./pic/fpt-play-2k3.png" loading="lazy" title="" />
+          </a>
+          <a href="#" title="">
+            <img src="./pic/dong-luc-2k3.png" loading="lazy" title="" />
+          </a>
+          <a href="#" title="">
+            <img src="./pic/2023-pti.png" loading="lazy" title="" />
+          </a>
+        </div>
       </div>
     </div>
-    <section id="menuFoot">
-      <div class="wrp">
-        <ul>
-          <li>
-            <a href="#" title="">LIÊN HỆ</a>
-          </li>
-          <li>
-            <a href="#" title="">HỎI ĐÁP</a>
-          </li>
-          <li>
-            <a href="#" title="">CƠ HỘI NGHỀ NGHỆP</a>
-          </li>
-          <li>
-            <a href="#" title="">CHÍNH SÁCH BẢO MẬT</a>
-          </li>
-          <li>
-            <a href="#" title="">ĐIỀU KHOẢN SỬ DỤNG</a>
-          </li>
-          <li>
-            <a href="#" title="">ĐỐI TÁC</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section id="infoPage">
-      <div class="wrp">
-        <div class="item">
-          <span class="icon">
-            <img src="./pic/footer-icon-1.png" alt="" loading="lazy" />
-          </span>
-          <span class="text">
-            <span>ĐƠN VỊ CHỦ QUẢN</span>
-            <span>Công ty cổ phần bóng đá chuyên nghiệp Việt Nam (VPF)</span>
-          </span>
-        </div>
-        <div class="item">
-          <span class="icon">
-            <img src="./pic/footer-icon-3.png" alt="" loading="lazy" />
-          </span>
-          <span class="text">
-            <span>GIẤY PHÉP</span>
-            <span>Giấy phép số 4593/GP-TTĐT do sở TT&TT Hà Nội cấp ngày
-              31/10/2017</span>
-          </span>
-        </div>
-        <div class="item">
-          <span class="icon">
-            <img src="./pic/footer-icon-5.png" alt="" loading="lazy" />
-          </span>
-          <span class="text">
-            <span>LIÊN LẠC</span>
-            <span> 024.3785.8457/58 - FAX: 024.3785.8462 </span>
-          </span>
-        </div>
-        <div class="item">
-          <span class="icon">
-            <img src="./pic/footer-icon-2.png" alt="" loading="lazy" />
-          </span>
-          <span class="text">
-            <span>ĐỊA CHỈ</span>
-            <span>Tầng 3, Tòa nhà Handico, Khu đô thị mới Mễ Trì Hạ, đường Phạm
-              Hùng, quận Nam Từ Liêm, TP. Hà Nội.</span>
-          </span>
-        </div>
-        <div class="item">
-          <span class="icon">
-            <img src="./pic/footer-icon-4.png" alt="" loading="lazy" />
-          </span>
-          <span class="text">
-            <span>NGƯỜI CHỊU TRÁCH NHIỆM NỘI DUNG</span>
-            <span>Nguyễn Thị Thu Huyền (Trưởng phòng Truyền Thông - 02437858457
-              (máy lẻ 126))</span>
-          </span>
-        </div>
-        <div class="item">
-          <span class="icon">
-            <img src="./pic/footer-icon-6.png" alt="" loading="lazy" />
-          </span>
-          <span class="text link">
-            <a href="" title="">www.vpf.vn</a>
-            <a href="" title="">www.vnleague.com</a>
-            <a href="" title="">info@vpf.vn</a>
-          </span>
-        </div>
-      </div>
-    </section>
-    <section id="copyRight">
-      <div class="wrp">
-        <span class="left">
-          © 2018 VIETNAM PROFESSIONAL FOOTBALL ALL RIGHTS RESERVED
+  </section>
+  <div id="listSocial">
+    <div class="wrp">
+      <a href="" title="" class="item" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" title="" class="item" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+  </div>
+  <section id="menuFoot">
+    <div class="wrp">
+      <ul>
+        <li>
+          <a href="#" title="">LIÊN HỆ</a>
+        </li>
+        <li>
+          <a href="#" title="">HỎI ĐÁP</a>
+        </li>
+        <li>
+          <a href="#" title="">CƠ HỘI NGHỀ NGHỆP</a>
+        </li>
+        <li>
+          <a href="#" title="">CHÍNH SÁCH BẢO MẬT</a>
+        </li>
+        <li>
+          <a href="#" title="">ĐIỀU KHOẢN SỬ DỤNG</a>
+        </li>
+        <li>
+          <a href="#" title="">ĐỐI TÁC</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="infoPage">
+    <div class="wrp">
+      <div class="item">
+        <span class="icon">
+          <img src="./pic/footer-icon-1.png" alt="" loading="lazy" />
         </span>
-        <a href="/" title="">
-          <img src="./css/icon/Logo.png" alt="" loading="lazy" />
-        </a>
+        <span class="text">
+          <span>ĐƠN VỊ CHỦ QUẢN</span>
+          <span>Công ty cổ phần bóng đá chuyên nghiệp Việt Nam (VPF)</span>
+        </span>
       </div>
-    </section>
+      <div class="item">
+        <span class="icon">
+          <img src="./pic/footer-icon-3.png" alt="" loading="lazy" />
+        </span>
+        <span class="text">
+          <span>GIẤY PHÉP</span>
+          <span>Giấy phép số 4593/GP-TTĐT do sở TT&TT Hà Nội cấp ngày
+            31/10/2017</span>
+        </span>
+      </div>
+      <div class="item">
+        <span class="icon">
+          <img src="./pic/footer-icon-5.png" alt="" loading="lazy" />
+        </span>
+        <span class="text">
+          <span>LIÊN LẠC</span>
+          <span> 024.3785.8457/58 - FAX: 024.3785.8462 </span>
+        </span>
+      </div>
+      <div class="item">
+        <span class="icon">
+          <img src="./pic/footer-icon-2.png" alt="" loading="lazy" />
+        </span>
+        <span class="text">
+          <span>ĐỊA CHỈ</span>
+          <span>Tầng 3, Tòa nhà Handico, Khu đô thị mới Mễ Trì Hạ, đường Phạm
+            Hùng, quận Nam Từ Liêm, TP. Hà Nội.</span>
+        </span>
+      </div>
+      <div class="item">
+        <span class="icon">
+          <img src="./pic/footer-icon-4.png" alt="" loading="lazy" />
+        </span>
+        <span class="text">
+          <span>NGƯỜI CHỊU TRÁCH NHIỆM NỘI DUNG</span>
+          <span>Nguyễn Thị Thu Huyền (Trưởng phòng Truyền Thông - 02437858457
+            (máy lẻ 126))</span>
+        </span>
+      </div>
+      <div class="item">
+        <span class="icon">
+          <img src="./pic/footer-icon-6.png" alt="" loading="lazy" />
+        </span>
+        <span class="text link">
+          <a href="" title="">www.vpf.vn</a>
+          <a href="" title="">www.vnleague.com</a>
+          <a href="" title="">info@vpf.vn</a>
+        </span>
+      </div>
+    </div>
+  </section>
+  <section id="copyRight">
+    <div class="wrp">
+      <span class="left">
+        © 2018 VIETNAM PROFESSIONAL FOOTBALL ALL RIGHTS RESERVED
+      </span>
+      <a href="/" title="">
+        <img src="./css/icon/Logo.png" alt="" loading="lazy" />
+      </a>
+    </div>
+  </section>
 
-    <a href="javascript://" id="bttop">
-      <i class="fad fa-arrow-to-top"></i>
-    </a>
-    <!--JS-->
-    <script src="./js/jquery-3.6.4.min.js"></script>
-    <script src="bootstrap/bootstrap.js"></script>
-    <script src="js/Owl2/owl.carousel.min.js"></script>
-    <script src="js/jquery.marquee.min.js"></script>
-    <script src="js/Common.js"></script>
+  <a href="javascript://" id="bttop">
+    <i class="fad fa-arrow-to-top"></i>
+  </a>
+  <!--JS-->
+  <script src="./js/jquery-3.6.4.min.js"></script>
+  <script src="bootstrap/bootstrap.js"></script>
+  <script src="js/Owl2/owl.carousel.min.js"></script>
+  <script src="js/jquery.marquee.min.js"></script>
+  <script src="js/Common.js"></script>
 
-    <!--Facebook-->
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v18.0"
-      nonce="1FYHl4NO"></script>
+  <!--Facebook-->
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v18.0"
+    nonce="1FYHl4NO"></script>
 </body>
 
 </html>
