@@ -344,12 +344,12 @@
   #container.inside {
     padding: 20px 0 40px 0;
   }
-  #container.inside .wrp .colRight {
+  #container .wrp .colRight {
     flex-direction: column;
   }
-  #container.inside .wrp .colRight #charts,
-  #container.inside .wrp .colRight #playerRankings {
-    width: 100%;
+  #container .wrp .colRight #charts,
+  #container .wrp .colRight #playerRankings {
+    width: 100% !important;
   }
   #news .titleCate {
     font-size: 25px;

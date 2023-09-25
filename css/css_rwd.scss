@@ -478,14 +478,16 @@
       }
     }
   }
-  #container.inside {
-    padding: 20px 0 40px 0;
+  #container {
+    &.inside {
+      padding: 20px 0 40px 0;
+    }
     .wrp {
       .colRight {
         flex-direction: column;
         #charts,
         #playerRankings {
-          width: 100%;
+          width: 100% !important;
         }
       }
     }

@@ -195,6 +195,8 @@ $(document).ready(() => {
     }
     $(this).toggleClass("active");
   });
+
+  loadPageFacebook();
 });
 $(window).scroll(function () {
   var scrollTop = $(window).scrollTop();
@@ -205,6 +207,21 @@ $(window).scroll(function () {
   }
 });
 
+$(window).resize(function () {
+  loadPageFacebook();
+});
+
+function loadPageFacebook() {
+  var container_width = $('#pluginShare .facebook').width();
+  $('#pageFacebook').html(`<div class="fb-page" data-href="https://www.facebook.com/Vietsports2020" data-tabs="timeline" data-width="${container_width}"
+          data-height="570" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+          data-show-facepile="true">
+          <blockquote cite="https://www.facebook.com/Vietsports2020" class="fb-xfbml-parse-ignore">
+            <a href="https://www.facebook.com/Vietsports2020">Vietsports</a>
+          </blockquote>
+        </div>`);
+  FB.XFBML.parse();
+}
 function preventScroll(e) {
   e.preventDefault();
   e.stopPropagation();
