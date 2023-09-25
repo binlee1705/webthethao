@@ -1418,6 +1418,9 @@ header .wrp .right .menu #menu .divSearchPage input {
   font-size: 13px;
   outline: none;
 }
+header .wrp .right .menu #menu .divSearchPage .btn_divSearchPage {
+  display: none;
+}
 
 #session {
   margin-top: 10px;
