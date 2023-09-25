@@ -134,25 +134,26 @@ $(document).ready(() => {
     $(this).owlCarousel(
       owlslide(
         $(this).find(">*").length,
-        [30, 30, 30, 30, 30, 30],
+        [30, 20, 20, 20, 20, 20],
         true,
         true,
         true,
-        [2, 2, 2, 2, 2],
+        [2, 2, 2, 2, 1],
         "",
         ""
       )
     );
   });
   $(".commonSlideBanner").each(function () {
+    var checkInside = $(this).parents("#container").hasClass("inside");
     $(this).owlCarousel(
       owlslide(
         $(this).find(">*").length,
-        [10, 10, 10, 10, 10, 10],
+        [10, 10, 20, 20, 20, 10],
         true,
         true,
         true,
-        [1, 1, 1, 1, 1],
+        [1, checkInside ? 3 : 1, 2, 2, 1],
         "fadeIn",
         "fadeOut"
       )
@@ -166,9 +167,9 @@ $(document).ready(() => {
         true,
         true,
         true,
-        [4, 4, 4, 4, 4],
-        "fadeIn",
-        "fadeOut"
+        [4, 3, 2, 2, 1],
+        "",
+        ""
       )
     );
   });
@@ -180,7 +181,7 @@ $(document).ready(() => {
         true,
         true,
         true,
-        [4, 4, 4, 4, 4],
+        [4, 4, 3, 3, 2],
         "",
         ""
       )
@@ -220,20 +221,20 @@ function Increasenoidung() {
   $(".noidung").css(
     "cssText",
     "font-size:" +
-      size +
-      "px !important; line-height:" +
-      lineheight +
-      "px !important"
+    size +
+    "px !important; line-height:" +
+    lineheight +
+    "px !important"
   );
   $(".noidung")
     .find("*")
     .css(
       "cssText",
       "font-size:" +
-        size +
-        "px !important; line-height:" +
-        lineheight +
-        "px !important"
+      size +
+      "px !important; line-height:" +
+      lineheight +
+      "px !important"
     );
 }
 function Decreasenoidung() {
@@ -242,20 +243,20 @@ function Decreasenoidung() {
   $(".noidung").css(
     "cssText",
     "font-size:" +
-      size +
-      "px !important; line-height:" +
-      lineheight +
-      "px !important"
+    size +
+    "px !important; line-height:" +
+    lineheight +
+    "px !important"
   );
   $(".noidung")
     .find("*")
     .css(
       "cssText",
       "font-size:" +
-        size +
-        "px !important; line-height:" +
-        lineheight +
-        "px !important"
+      size +
+      "px !important; line-height:" +
+      lineheight +
+      "px !important"
     );
 }
 function Resetnoidung() {
@@ -264,20 +265,20 @@ function Resetnoidung() {
   $(".noidung").css(
     "cssText",
     "font-size:" +
-      size +
-      "px !important; line-height:" +
-      lineheight +
-      "px !important"
+    size +
+    "px !important; line-height:" +
+    lineheight +
+    "px !important"
   );
   $(".noidung")
     .find("*")
     .css(
       "cssText",
       "font-size:" +
-        size +
-        "px !important; line-height:" +
-        lineheight +
-        "px !important"
+      size +
+      "px !important; line-height:" +
+      lineheight +
+      "px !important"
     );
 }
 function fullSrceenIframe() {

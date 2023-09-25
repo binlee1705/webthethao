@@ -1478,8 +1478,8 @@ header .wrp .right .menu #menu .divSearchPage input {
 #session .tabs .tab-contents .item {
   padding: 5px;
   border: 1px solid #fff;
-  border-left: 0.5px solid #fff;
-  border-right: 0.5px solid #fff;
+  border-left: 0.5008px solid #fff;
+  border-right: 0.5008px solid #fff;
 }
 #session .tabs .tab-contents .item .info {
   text-align: center;
@@ -1748,6 +1748,14 @@ header .wrp .right .menu #menu .divSearchPage input {
 #charts .tabs .tab-contents .group .table th {
   text-align: center;
 }
+#charts .tabs .tab-contents .group .table td:nth-child(1),
+#charts .tabs .tab-contents .group .table th:nth-child(1) {
+  width: 4.375rem;
+}
+#charts .tabs .tab-contents .group .table td:nth-child(2),
+#charts .tabs .tab-contents .group .table th:nth-child(2) {
+  text-align: left;
+}
 #charts .tabs .tab-contents .viewDetail {
   display: block;
   margin-top: 10px;
@@ -1950,6 +1958,13 @@ header .wrp .right .menu #menu .divSearchPage input {
   gap: 20px;
   margin-top: 20px;
   flex-wrap: wrap;
+}
+#donors .wrp .parent .group > * {
+  max-width: 100%;
+}
+#donors .wrp .parent .group > * img {
+  width: 100%;
+  height: auto;
 }
 
 #menuFoot {
@@ -2337,6 +2352,7 @@ header .wrp .right .menu #menu .divSearchPage input {
 
 #pathWay {
   background: var(--bg);
+  background-repeat: no-repeat;
   min-height: 184px;
   display: flex;
   align-items: center;
@@ -2485,6 +2501,7 @@ header .wrp .right .menu #menu .divSearchPage input {
   background: #fff;
   align-items: center;
   justify-content: center;
+  white-space: nowrap;
 }
 #tabCates li.active a, #tabCates li:hover a {
   background: #7ec83b;
@@ -2580,6 +2597,7 @@ header .wrp .right .menu #menu .divSearchPage input {
   font-weight: bold;
   font-size: 18px;
   margin-bottom: 15px;
+  line-height: 26px;
 }
 #vote .listVote .group {
   border: 1px solid #dddddd;
@@ -2765,6 +2783,7 @@ header .wrp .right .menu #menu .divSearchPage input {
   font-size: 50px;
   letter-spacing: 25px;
   font-weight: 500;
+  flex: 1;
 }
 #match.detail .infoMatch .tab-links {
   display: flex;
@@ -2937,6 +2956,7 @@ header .wrp .right .menu #menu .divSearchPage input {
   font-size: 17px;
   font-weight: 500;
   color: #fff;
+  min-height: 100%;
 }
 #teamDetails .tabs .tab-links li.active a {
   background: #7ec83b;
@@ -2962,7 +2982,7 @@ header .wrp .right .menu #menu .divSearchPage input {
   white-space: nowrap;
 }
 #teamDetails .tabs .tab-contents .table tbody td {
-  min-width: 70px;
+  min-width: 100px;
   vertical-align: middle;
   text-align: center;
 }
@@ -2970,6 +2990,9 @@ header .wrp .right .menu #menu .divSearchPage input {
   display: flex;
   align-items: center;
   gap: 7px;
+}
+#teamDetails .tabs .tab-contents .table tbody td .player .js_div_particName {
+  white-space: nowrap;
 }
 #teamDetails .tabs .tab-contents .table tbody td .player .image {
   width: 40px;
@@ -3200,4 +3223,20 @@ select {
   text-decoration: none;
   background: #7ec83b;
   color: #fff;
+}
+
+.ifYoutube {
+  position: relative;
+}
+.ifYoutube::before {
+  content: "";
+  display: block;
+  padding-bottom: 56.25%;
+}
+.ifYoutube iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */

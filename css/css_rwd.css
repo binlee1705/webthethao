@@ -1,8 +1,5 @@
 @import "css_rwd_common.css";
 @media (max-width: 1199px) {
-  :root {
-    font-size: 15px;
-  }
   .openList {
     display: block;
     width: 2.5rem;
@@ -46,454 +43,550 @@
   .wrp .wrp {
     width: 100%;
   }
-  header:after {
-    display: none;
+  #container .wrp {
+    gap: 20px;
   }
-  header .bgHead {
-    display: none;
-  }
-  header .wrp {
-    transform: none;
-    position: relative;
-    left: 0;
-  }
-  header .wrp .top {
-    width: 100%;
-    position: static;
-  }
-  header .wrp .top .logo .icon svg {
-    width: 5.625rem;
-    height: 5.625rem;
-  }
-  header .wrp .top .right {
-    gap: 0rem;
-  }
-  header .wrp .top .right .searchForm {
-    display: none;
-  }
-  header .wrp .top .right .language svg path {
-    fill: #333;
-  }
-  header .wrp #menu {
-    overflow: auto;
-    transform: none !important;
-    opacity: 1 !important;
-    position: fixed;
-    width: 80vw;
-    height: 100vh;
-    z-index: 25;
-    padding: 0;
-    background: #7ec83b;
-    color: #333;
-    top: 0;
-    left: -100%;
-    font-size: 1.25rem;
-    text-transform: uppercase;
-    pointer-events: all !important;
-  }
-  header .wrp #menu ul {
-    z-index: 21;
-    display: block;
-    padding: 1.25rem 0;
-  }
-  header .wrp #menu ul .openSub {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 3.125rem;
-    font-size: 1.25rem;
-  }
-  header .wrp #menu ul .openSub.ac i:before {
-    content: "\f106";
-  }
-  header .wrp #menu ul li {
-    display: flex;
-    padding: 0 1.25rem 0 1.25rem;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  header .wrp #menu ul li.active {
-    background: #7ec83b !important;
-    color: #fff !important;
-  }
-  header .wrp #menu ul li a {
-    background: transparent !important;
-    line-height: 1.875rem;
-    display: block;
-    display: flex;
-    padding: 0.9375rem 1.375rem;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
-    border-right: none;
-    flex: 1;
-  }
-  header .wrp #menu ul li a:not(.btnSearch) svg {
-    display: none;
-  }
-  header .wrp #menu ul li a:after {
-    display: none;
-  }
-  header .wrp #menu ul li a span.icon {
-    width: 1.5625rem;
-    display: inline-block;
-    margin: 0;
-    margin-right: 0.625rem;
-  }
-  header .wrp #menu ul li a span.icon img {
-    display: block;
-    margin: auto;
-  }
-  header .wrp #menu ul li:hover > ul {
-    display: none;
-  }
-  header .wrp #menu ul li:hover > a {
-    background: transparent;
-    color: #fff;
-  }
-  header .wrp #menu ul li ul {
-    border: none !important;
-    visibility: visible;
-    opacity: 1;
-    pointer-events: all;
-    padding: 0 !important;
-    padding-left: 1.25rem;
-    transition: none !important;
-    height: auto;
-    display: none;
-    width: 100%;
-    position: static;
-    background: transparent;
-  }
-  header .wrp #menu ul li ul li a {
-    padding: 0.9375rem 0.625rem;
-    white-space: normal;
-    font-size: 1.1875rem;
-  }
-  header .wrp #menu ul li ul li a > i {
-    display: none;
-  }
-  header .wrp #menu ul li .toggleSearch {
-    display: none;
-  }
-  header .wrp #menu.ac {
-    left: 0;
-  }
-  header .wrp #menu .searchForm {
-    margin-top: 0.625rem;
-    width: 100%;
-  }
-  header .wrp #menu .searchForm .btnSearch {
-    flex: none;
-    width: 2.5rem;
-    height: 2.5rem;
-    padding: 0;
-  }
-  #containHome .wrp .colLeft {
+  #container .wrp .colLeft {
     width: 70%;
   }
-  #containHome .wrp .colRight {
-    width: 27%;
+  #container .wrp .colRight {
+    width: calc(30% - 20px);
   }
-  #news .group .item .top .wImage {
-    width: 6.25rem;
+  #container.inside .wrp {
+    gap: 30px;
+    flex-direction: column;
   }
-  #newsHot .wrp .left {
-    width: 60%;
+  #container.inside .wrp .colLeft,
+  #container.inside .wrp .colRight {
+    width: 100%;
   }
-  #newsHot .wrp .right {
-    padding-left: 1.25rem;
+  #container.inside .wrp .colRight {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  #container.inside .wrp .colRight #charts,
+  #container.inside .wrp .colRight #playerRankings {
+    width: calc(50% - 10px);
+  }
+  #container.inside .wrp .colRight #slideBanner {
+    width: 100%;
+  }
+  #container.inside .wrp .colRight #linkWebsites {
+    margin: 0;
+  }
+  #latestNews .group {
+    gap: 0.9375rem;
+  }
+  #latestNews .group .item {
+    width: calc((100% - 1.875rem) / 3);
+  }
+  #pluginShare .wrp {
+    gap: 20px;
+  }
+  #pluginShare .wrp .facebook {
+    width: 300px;
+  }
+  #pluginShare .wrp #slideBanner {
+    width: 300px;
+  }
+  #infoPage .wrp {
+    gap: 20px;
+  }
+  #infoPage .wrp .item {
+    width: calc((100% - 40px) / 3);
+    font-size: 13px;
+  }
+  #infoPage .wrp .item .text.link {
+    flex-direction: column;
+    gap: 3px;
+  }
+  #bttop {
+    display: none !important;
+  }
+  #session .wrp .tabs .tab-links li a {
+    font-size: 14px;
+  }
+  #ListTeam .group .item {
+    width: calc((100% - 80px) / 5);
+  }
+  #pathWay {
+    min-height: 200px;
+    background-position: right center;
+  }
+  #player .tabs .tab-contents .tablestatistic td:nth-child(1) {
+    width: 300px;
+  }
+  #tabCates {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  #tabCates li {
+    display: table-cell;
+    padding-right: 6px;
   }
 }
 @media (max-width: 991px) {
-  .commonTitle {
-    font-size: 1rem;
-  }
-  #newsHot .wrp .left {
-    width: 50%;
-  }
-  #newsHot .wrp .right {
-    flex: 1;
-    padding-left: 0.625rem;
-  }
-  #newsHot .wrp .right .info {
-    padding: 0.625rem;
-  }
-  #newsHot .wrp .right .info a {
-    padding-top: 0.625rem;
-  }
-  #newsHot .wrp .right .info a:first-child {
-    padding-top: 0;
-    border: none;
-  }
-  #containHome .wrp .colLeft {
-    width: 67%;
-  }
-  #containHome .wrp .colRight {
-    width: 30%;
-  }
-  #contact.home .content .statistical {
-    gap: 1.25rem;
-  }
-  #contact.home .content .statistical li .text {
-    white-space: nowrap;
-  }
-  footer {
-    padding: 1.25rem 0;
-  }
-  footer .wrp .listInfo {
+  #container .wrp {
     flex-direction: column;
+    gap: 20px;
   }
-  #documentHome.home {
-    flex-direction: column;
-  }
-  #documentHome.home .parent {
+  #container .wrp .colLeft {
     width: 100%;
   }
-  #documentHome.inside .wrp {
-    flex-direction: column;
-  }
-  #documentHome.inside .wrp .colLeft {
+  #container .wrp .colRight {
     width: 100%;
-  }
-  #documentHome.inside .wrp .colLeft .formFilter {
-    display: none;
-    flex-wrap: wrap;
-    gap: 1.25rem;
-    align-items: flex-end;
-  }
-  #documentHome.inside .wrp .colLeft .formFilter .item,
-  #documentHome.inside .wrp .colLeft .formFilter .btn {
-    margin-bottom: 0;
-    width: calc((100% - 1.25rem) / 2) !important;
-    padding-bottom: 0;
-    border: none;
-  }
-  #documentHome.inside .wrp .colLeft .formFilter .btn {
-    height: 2.1875rem;
-  }
-  #documentHome.inside .wrp .colLeft .formFilter.ac {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
   }
-  #documentHome.inside .wrp .colRight {
+  #container .wrp .colRight #charts,
+  #container .wrp .colRight #playerRankings {
+    width: calc(50% - 10px);
+  }
+  #container .wrp .colRight #slideBanner {
     width: 100%;
-    margin-top: 0.625rem;
-    padding-left: 0;
+  }
+  #container .wrp .colRight #linkWebsites {
+    margin: 0;
+  }
+  #pluginShare .wrp {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  #pluginShare .wrp .facebook,
+  #pluginShare .wrp .youtube {
+    width: calc((100% - 40px) / 2);
+    flex: none;
+  }
+  #pluginShare .wrp #slideBanner {
+    width: 100%;
+  }
+  #menuFoot {
+    display: none;
+  }
+  #infoPage .wrp {
+    gap: 20px 30px;
+  }
+  #infoPage .wrp .item {
+    width: calc((100% - 30px) / 2);
+  }
+  #ListTeam .group .item {
+    width: calc((100% - 60px) / 4);
+  }
+  #teamDetails .top .logo img {
+    width: 130px;
+  }
+  #teamDetails .top .stadium .nameTeam {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  #teamDetails .top .stadium .afterName .item {
+    gap: 6px;
+  }
+  #teamDetails .top .stadium .afterName .item .icon img {
+    max-width: 50px;
+  }
+  #teamDetails .top .stadium .afterName .item .text {
+    font-size: 15px;
+    gap: 5px;
+  }
+  #news.list .main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #news.list .main .item {
+    width: 100%;
+  }
+  #news.list .main .item:nth-child(2), #news.list .main .item:nth-child(3) {
+    width: calc((100% - 20px) / 2);
+  }
+  #news.list .main .item:nth-child(2) .wImage::before, #news.list .main .item:nth-child(3) .wImage::before {
+    padding-bottom: 66.66%;
+  }
+  #news.list.nofication .group .item {
+    width: calc((100% - 25px) / 2);
+  }
+  #Rankings .tableContent .group .table-responsive {
+    max-width: 100%;
+  }
+  #Rankings .tableContent .group .table-responsive .table {
+    max-width: none;
+  }
+  #Rankings .tableContent .note > * {
+    width: 33.3333333333%;
+  }
+  #hightLight .parent .group {
+    gap: 20px;
+  }
+  #hightLight .parent .group .item {
+    width: calc((100% - 40px) / 3);
+  }
+  #hightLight .parent .group .item .info .name {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  #hightLight .parent .group .item.colspan2 {
+    width: calc((100% - 40px) / 3 * 2 + 20px);
+  }
+  #hightLight .parent .group .item.colspan2 .wImage {
+    min-height: 229.33px;
+  }
+  #match.detail .tab-contents .tab .playerStatistics .content .tableContent td:nth-child(2), #match.detail .tab-contents .tab .playerStatistics .content .tableContent td:nth-child(4) {
+    width: 50px;
+  }
+  #match.detail .tab-contents .tab .playerStatistics .content .tableContent td:nth-child(3) {
+    width: 70px;
+  }
+  #match.detail .tab-contents .tab .squad {
+    gap: 15px;
+  }
+  #match.detail .tab-contents .tab .squad .group {
+    width: calc((100% - 15px) / 2);
+  }
+  #match.detail .tab-contents .tab .squad .group .table td:nth-child(1) {
+    width: 50px;
+  }
+  #schedule .nameSchedule {
+    font-size: 25px;
+  }
+  #schedule .tabMonth {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+  #schedule .tabMonth .item {
+    display: table-cell;
+    white-space: nowrap;
+    padding: 0 13px;
+  }
+  #schedule .search {
+    flex-wrap: wrap;
+  }
+  #schedule .search select {
+    width: calc((100% - 15px) / 2);
+    flex: none;
+  }
+  #schedule .round .group {
+    gap: 10px;
+    flex-direction: column;
+    padding: 0 !important;
+  }
+  #schedule .round .group .table-responsive .table td:nth-child(1), #schedule .round .group .table-responsive .table td:nth-child(4), #schedule .round .group .table-responsive .table td:nth-child(6) {
+    width: 70px;
   }
 }
 @media (max-width: 767px) {
   .wrp {
-    max-width: calc(100vw - 1.25rem);
+    max-width: calc(100% - 20px);
+    width: calc(100% - 20px);
   }
-  header .wrp .top .logo .icon {
-    max-width: 4.375rem;
+  #ListTeam .group .item {
+    width: calc((100% - 40px) / 3);
   }
-  header .wrp .top .logo .text {
-    padding-left: 0.625rem;
+  #player .tabs .tab-contents .tablestatistic td:nth-child(1) {
+    width: 230px;
   }
-  header .wrp .top .logo .text span:first-child {
-    font-size: 1.375rem;
-    margin-bottom: 0;
+  #hightLight .parent .group {
+    gap: 25px;
   }
-  header .wrp .top .logo .text span:last-child {
-    font-size: 1rem;
+  #hightLight .parent .group .item {
+    width: calc((100% - 25px) / 2);
   }
-  .commonTitle {
-    font-size: 1rem;
-    padding: 0 0.3125rem;
-  }
-  .commonTitle .xtc {
-    display: none;
-  }
-  #contact.home {
-    padding: 1.5625rem 0.625rem;
-  }
-  #contact.home .content {
+  #hightLight .parent .group .item.colspan2 {
     width: 100%;
   }
-  #contact.home .content .statistical {
-    flex-direction: column;
-    gap: 0.625rem;
+  #hightLight .parent .group .item .info .name {
+    font-size: 15px;
+    line-height: 24px;
   }
 }
 @media (max-width: 479px) {
-  header .wrp .top {
+  #latestNews .group .item {
+    width: 100%;
+  }
+  #latestNews .group .item:first-child {
     flex-direction: column;
   }
-  header .wrp .top .logo {
-    padding: 0;
+  #latestNews .group .item:first-child .wImage {
     width: 100%;
   }
-  header .wrp .top .logo .icon {
-    max-width: 4.375rem;
-  }
-  header .wrp .top .logo .text {
-    padding-left: 0.625rem;
-  }
-  header .wrp .top .logo .text span:first-child {
-    font-size: 1.3125rem;
-    margin-bottom: 0;
-  }
-  header .wrp .top .logo .text span:last-child {
-    font-size: 0.9375rem;
-  }
-  header .wrp .top .right {
-    width: 100%;
-    justify-content: flex-end;
-    margin-bottom: 0.625rem;
-    gap: 0rem;
-  }
-  header .wrp .top .right .searchForm {
-    display: flex;
-    max-width: 100%;
-    flex: 1;
-  }
-  header .wrp #menu ul li {
-    padding: 0;
-  }
-  header .wrp #menu ul li a {
-    font-size: 0.9375rem !important;
-    padding: 0.3125rem 0.625rem !important;
-    padding-left: 1.25rem !important;
-  }
-  header .wrp #menu ul .searchForm {
-    margin: 0 0.625rem;
-    margin-top: 1.25rem;
-  }
-  header .wrp #menu ul .searchForm .btnSearch {
-    padding: 0 !important;
-  }
-  #newsHot .wrp {
-    flex-direction: column;
-  }
-  #newsHot .wrp .left {
-    width: 100%;
-  }
-  #newsHot .wrp .left .main .wImage {
-    height: auto;
-  }
-  #newsHot .wrp .left .main .wImage::before {
-    padding-bottom: 45.8441558442%;
-  }
-  #newsHot .wrp .left .main .info {
-    position: static;
-  }
-  #newsHot .wrp .left .main .info .name {
-    font-size: 1rem;
-    height: auto;
-  }
-  #newsHot .wrp .left .list li a > span {
-    height: auto;
+  #latestNews .group .item:first-child .content .name {
+    font-weight: bold;
+    line-height: 21px;
+    font-size: 16px;
     display: block;
+    margin-bottom: 7px;
   }
-  #newsHot .wrp .right {
+  #pluginShare .wrp .facebook,
+  #pluginShare .wrp .youtube {
     width: 100%;
-    padding-left: 0rem;
-    margin-top: 1.25rem;
   }
-  #newsHot .wrp .right .main .wImage {
-    height: auto;
+  #infoPage .wrp .item {
+    width: 100%;
   }
-  #newsHot .wrp .right .main .wImage:before {
-    padding-bottom: 100%;
+  #session .wrp .tabs .tab-links {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
   }
-  #containHome .wrp {
+  #session .wrp .tabs .tab-links li {
+    display: table-cell;
+    width: auto;
+    max-width: 80%;
+    white-space: nowrap;
+  }
+  #session .wrp .tabs .tab-links li a {
+    font-size: 13px;
+  }
+  #container.inside {
+    padding: 20px 0 40px 0;
+  }
+  #container.inside .wrp .colRight {
     flex-direction: column;
   }
-  #containHome .wrp .colLeft {
+  #container.inside .wrp .colRight #charts,
+  #container.inside .wrp .colRight #playerRankings {
     width: 100%;
   }
-  #containHome .wrp .colRight {
-    width: 100%;
-    margin-top: 1.25rem;
+  #news .titleCate {
+    font-size: 25px;
   }
-  #containHome .wrp .colLeft .bannerTop {
+  #news.list .main {
+    margin-bottom: 15px;
     flex-direction: column;
+    display: flex;
   }
-  #containHome .wrp .colLeft .bannerTop .commonBanner {
-    width: 100%;
-  }
-  #newsHome .parent {
-    margin-bottom: 1.25rem;
-  }
-  #newsHome .parent .group .main {
-    flex-direction: column;
-  }
-  #newsHome .parent .group .main .wImage {
-    width: 100%;
-  }
-  #newsHome .parent .group .main .info {
-    width: 100%;
-    padding: 0;
-    margin-top: 0.625rem;
-  }
-  #galleryHome .parent {
-    flex-direction: column;
-  }
-  #galleryHome .parent .videoHome {
-    width: 100%;
-    padding-right: 0;
-  }
-  #galleryHome .parent .imageHome {
-    width: 100%;
-    margin-top: 0.9375rem;
-  }
-  #newsDetail {
-    width: calc(100% + 1.25rem);
-    margin-left: -0.625rem;
-  }
-  #newsDetail .otherNews {
-    margin: 0 0.625rem;
-  }
-  #documentHome.home .wrp .colLeft .formFilter .item,
-  #documentHome.home .wrp .colLeft .formFilter .btn, #documentHome.inside .wrp .colLeft .formFilter .item,
-  #documentHome.inside .wrp .colLeft .formFilter .btn {
+  #news.list .main .item {
+    align-items: flex-start;
+    display: flex;
+    gap: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #e3e3e3;
     width: 100% !important;
   }
-  #documentHome.home .tableDoc, #documentHome.inside .tableDoc {
-    padding-left: 0;
-    padding-right: 0;
+  #news.list .main .item::before {
+    display: none;
   }
-  #documentHome.home .tableDoc table, #documentHome.inside .tableDoc table {
-    font-size: 1rem;
+  #news.list .main .item .wImage {
+    width: 100px;
   }
-  #documentHome.home .tableDoc table thead, #documentHome.inside .tableDoc table thead {
-    background: #dfdfdf;
+  #news.list .main .item .wImage:before {
+    padding-bottom: 70% !important;
   }
-  #documentHome.home .tableDoc table thead th, #documentHome.inside .tableDoc table thead th {
-    padding: 0.625rem 0rem;
-    font-size: 0.875rem;
+  #news.list .main .item .info {
+    margin-top: -3px;
+    position: static;
+    display: flex;
+    flex: 1;
+    flex-direction: column-reverse;
+    padding: 0;
   }
-  #documentHome.home .tableDoc table tr td,
-  #documentHome.home .tableDoc table tr th, #documentHome.inside .tableDoc table tr td,
-  #documentHome.inside .tableDoc table tr th {
-    padding: 0.625rem;
+  #news.list .main .item .info .nameCate {
+    width: -moz-fit-content;
+    width: fit-content;
   }
-  #documentHome.home .tableDoc table tr td:nth-child(1),
-  #documentHome.home .tableDoc table tr th:nth-child(1), #documentHome.inside .tableDoc table tr td:nth-child(1),
-  #documentHome.inside .tableDoc table tr th:nth-child(1) {
-    width: 6.25rem;
+  #news.list .main .item .info .name {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(17, 17, 17);
+    margin-top: 0;
+    font-family: Roboto;
   }
-  #documentHome.home .tableDoc table tr td:nth-child(2),
-  #documentHome.home .tableDoc table tr th:nth-child(2), #documentHome.inside .tableDoc table tr td:nth-child(2),
-  #documentHome.inside .tableDoc table tr th:nth-child(2) {
-    width: 8.125rem;
+  #news.list .group {
+    flex-direction: column;
+    gap: 15px;
   }
-  #documentHome.home .detailDoc .tableDetail .content .rowDT .col1, #documentHome.inside .detailDoc .tableDetail .content .rowDT .col1 {
-    width: 11.25rem;
+  #news.list .group .item {
+    border-bottom: 1px dashed #e3e3e3;
+    padding-bottom: 15px;
+    width: 100% !important;
   }
-  .tabs .commonTitle.tab-links li {
-    padding: 0.4375rem 0.3125rem;
+  #news.list .group .item .info {
+    margin-top: -3px;
+  }
+  #news.list.videoList .item .wImage:after {
+    content: "\f144";
+    font-family: "FontAwesome";
+    font-weight: 400;
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 20px;
+    pointer-events: none;
+  }
+  #news .catesort {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+  }
+  #news .catesort .listCate {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  #news .catesort .listCate > * {
+    display: table-cell;
+    white-space: nowrap;
+    padding-right: 5px;
+  }
+  #ListTeam .group .item {
+    width: calc((100% - 20px) / 2);
+  }
+  #teamDetails .top .logo img {
+    width: 125px;
+  }
+  #teamDetails .top .stadium {
+    padding-left: 20px;
+  }
+  #teamDetails .top .stadium .nameTeam {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  #teamDetails .top .stadium .afterName {
+    flex-direction: column;
+    gap: 10px;
+  }
+  #teamDetails .top .stadium .afterName .item {
+    gap: 6px;
+  }
+  #teamDetails .top .stadium .afterName .item .icon img {
+    max-width: 50px;
+  }
+  #teamDetails .top .stadium .afterName .item .text {
+    font-size: 15px;
+    gap: 5px;
+  }
+  #teamDetails .tabs .tab-links li a {
+    font-size: 12px;
+  }
+  #player div:has(.namePlayer) {
+    flex-direction: column-reverse;
+    margin-bottom: 10px;
+    align-items: flex-end;
+  }
+  #player div:has(.namePlayer) .namePlayer {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+  #player .tabs .tab-contents .infoPlayer {
+    flex-direction: column;
+  }
+  #player .tabs .tab-contents .infoPlayer .image {
+    max-width: 90%;
+  }
+  #player .tabs .tab-contents .infoPlayer .image img {
+    max-width: 100%;
+  }
+  #player .tabs .tab-contents .infoPlayer .right {
+    width: 100%;
+  }
+  #player .tabs .tab-contents .infoPlayer .right .table {
+    width: 100%;
+  }
+  #player .tabs .tab-contents .tablestatistic {
+    table-layout: auto;
+  }
+  #player .tabs .tab-contents .tablestatistic td {
+    min-width: 70px;
+  }
+  #player .tabs .tab-contents .tablestatistic td:first-child {
+    min-width: 200px;
+  }
+  #Rankings .tableContent .note > * {
+    width: 50%;
+  }
+  #hightLight .parent .group {
+    gap: 25px;
+  }
+  #hightLight .parent .group .item {
+    width: 100%;
+  }
+  #hightLight .parent .group .item.colspan2 .wImage::before {
+    padding-bottom: 122.6708074534%;
+  }
+  #gallery.list .sessionName .image img {
+    max-width: 100px;
+  }
+  #gallery.list .group .item:nth-child(1), #gallery.list .group .item:nth-child(2), #gallery.list .group .item:nth-child(3), #gallery.list .group .item:nth-child(4) {
+    width: 100%;
+    background: none;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  #gallery.list .group .item:nth-child(1) .wImage, #gallery.list .group .item:nth-child(2) .wImage, #gallery.list .group .item:nth-child(3) .wImage, #gallery.list .group .item:nth-child(4) .wImage {
+    width: 120px;
+  }
+  #gallery.list .group .item:nth-child(1) .wImage:before, #gallery.list .group .item:nth-child(2) .wImage:before, #gallery.list .group .item:nth-child(3) .wImage:before, #gallery.list .group .item:nth-child(4) .wImage:before {
+    padding-bottom: 66.6666666667%;
+  }
+  #gallery.list .group .item:nth-child(1) .info, #gallery.list .group .item:nth-child(2) .info, #gallery.list .group .item:nth-child(3) .info, #gallery.list .group .item:nth-child(4) .info {
+    padding: 0;
+    flex: 1;
+  }
+  #gallery.list .group .item:nth-child(1) .info .name, #gallery.list .group .item:nth-child(2) .info .name, #gallery.list .group .item:nth-child(3) .info .name, #gallery.list .group .item:nth-child(4) .info .name {
+    padding: 0;
+    line-height: 23px;
+  }
+  #gallery.list .group .item:nth-child(1) .info .name::before, #gallery.list .group .item:nth-child(2) .info .name::before, #gallery.list .group .item:nth-child(3) .info .name::before, #gallery.list .group .item:nth-child(4) .info .name::before {
+    display: none;
+  }
+  #gallery.list .group .item:nth-child(1) .info .name, #gallery.list .group .item:nth-child(2) .info .name, #gallery.list .group .item:nth-child(3) .info .name, #gallery.list .group .item:nth-child(4) .info .name {
+    font-size: 16px;
+  }
+  #match.detail .infoMatch .mid {
+    padding: 15px 10px;
+  }
+  #match.detail .infoMatch .mid .team {
+    gap: 10px;
+  }
+  #match.detail .infoMatch .mid .score {
+    font-size: 40px;
+    letter-spacing: 5px;
     text-align: center;
   }
-  footer .wrp .logo {
-    margin-bottom: 1.25rem;
+  #match.detail .infoMatch .tab-links li a {
+    font-size: 12px;
   }
-  footer .wrp .logo .text span:first-child {
-    font-size: 1.0625rem;
+  #match.detail .tab-contents .tab .squad {
+    gap: 15px;
+    flex-direction: column;
   }
-  footer .wrp .logo .text span:last-child {
-    font-size: 1rem;
+  #match.detail .tab-contents .tab .squad .group {
+    width: 100%;
+  }
+  #goaltatistics div:has(.nameGoalStatistics) {
+    flex-direction: column-reverse;
+    align-items: flex-end !important;
+  }
+  #goaltatistics div:has(.nameGoalStatistics) .nameGoalStatistics {
+    width: 100%;
+    margin-top: 10px;
+  }
+  #goaltatistics .table {
+    table-layout: auto;
+  }
+  #goaltatistics .table td a {
+    white-space: nowrap;
+  }
+  #schedule .round .group .table-responsive {
+    width: 100%;
+  }
+  #schedule .round .group .table-responsive .table {
+    table-layout: auto;
+  }
+  #schedule .round .group .table-responsive .table td {
+    min-width: 70px;
+    white-space: nowrap;
   }
 }
 @media (max-width: 320px) {
@@ -502,15 +595,5 @@
   }
   .openList {
     width: 2.1875rem;
-  }
-  header .wrp .top .logo .icon {
-    max-width: 3.75rem;
-  }
-  header .wrp .top .logo .text span:first-child {
-    font-size: 1.125rem;
-    margin-bottom: 0;
-  }
-  header .wrp .top .logo .text span:last-child {
-    font-size: 0.875rem;
   }
 }/*# sourceMappingURL=css_rwd.css.map */
