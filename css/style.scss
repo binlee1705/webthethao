@@ -3,8 +3,8 @@
 @charset "UTF-8";
 
 :root {
-  font-size: 16px;
-  --widthWrp: #{1344px};
+  font-size: 1rem;
+  --widthWrp: #{84rem};
 }
 * {
   box-sizing: border-box;
@@ -15,8 +15,8 @@ body {
   min-width: 100%;
   max-width: 100vw;
   min-height: 100vh;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
 }
 .wrp {
   margin: auto;
@@ -62,26 +62,26 @@ header {
   .wrp {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 1.25rem;
     align-items: flex-end;
     .logo img {
-      width: 136px;
+      width: 8.5rem;
       height: auto;
     }
     .right {
-      width: calc(100% - 156px);
+      width: calc(100% - 9.75rem);
       .marquee {
         overflow: hidden;
       }
       .listTeam {
-        padding: 7px 0;
+        padding: 0.4375rem 0;
         display: flex;
         a.logoTeam {
-          width: 50px;
-          height: 50px;
-          border: 1px solid #c5c5c5;
-          margin-right: 5px;
-          padding: 5px;
+          width: 3.125rem;
+          height: 3.125rem;
+          border: 0.0625rem solid #c5c5c5;
+          margin-right: 0.3125rem;
+          padding: 0.3125rem;
           img {
             width: 100%;
             height: auto;
@@ -95,18 +95,18 @@ header {
         justify-content: space-between;
         background: $color-main;
         color: #fff;
-        padding: 0 20px;
-        gap: 40px;
+        padding: 0 1.25rem;
+        gap: 2.5rem;
         a:hover {
           text-decoration: none;
         }
         .text {
-          line-height: 24px;
+          line-height: 1.5rem;
           p:first-child {
             text-transform: uppercase;
           }
           p:last-child {
-            font-size: 17px;
+            font-size: 1.0625rem;
             font-weight: 700;
           }
         }
@@ -118,7 +118,7 @@ header {
           display: flex;
           font-family: "Roboto Condensed", sans-serif;
           > li {
-            font-size: 16px;
+            font-size: 1rem;
             font-weight: 700;
             > a {
               width: 100%;
@@ -127,7 +127,7 @@ header {
           li {
             position: relative;
             flex: auto;
-            padding: 20px 0;
+            padding: 1.25rem 0;
             a {
               display: flex;
               text-align: center;
@@ -152,17 +152,17 @@ header {
               background: #fff;
               position: absolute;
               top: 100%;
-              left: -10px;
+              left: -0.625rem;
               z-index: 2;
               color: #000;
-              min-width: 200px;
-              box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+              min-width: 12.5rem;
+              box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
               li {
                 padding: 0;
                 a {
-                  padding: 7px 15px;
+                  padding: 0.4375rem 0.9375rem;
                   font-weight: normal;
-                  font-size: 15px;
+                  font-size: 0.9375rem;
                   display: block;
                   width: 100%;
                   text-align: left;
@@ -187,8 +187,8 @@ header {
             background: #fff;
             z-index: 7;
             .menuLeft {
-              width: 250px;
-              height: 300px;
+              width: 15.625rem;
+              height: 18.75rem;
               overflow-y: auto;
               background: #fafafa;
               .itemLink {
@@ -196,9 +196,9 @@ header {
                 font-weight: 700;
                 text-align: right;
                 display: block;
-                font-size: 13px;
-                padding: 7px 10px;
-                line-height: 18px;
+                font-size: 0.8125rem;
+                padding: 0.4375rem 0.625rem;
+                line-height: 1.125rem;
                 &:hover,
                 &.active {
                   background: $color-hover;
@@ -208,12 +208,12 @@ header {
             }
             .menuRight {
               flex: 1;
-              padding: 20px;
+              padding: 1.25rem;
               .group {
                 display: flex;
-                gap: 20px;
+                gap: 1.25rem;
                 .item {
-                  width: calc((100% - 60px) / 4);
+                  width: calc((100% - 3.75rem) / 4);
                   .wImage {
                     &::before {
                       padding-bottom: wImage(135, 196);
@@ -223,11 +223,11 @@ header {
                     position: absolute;
                     bottom: 0;
                     left: 0;
-                    padding: 5px 15px;
+                    padding: 0.3125rem 0.9375rem;
                     background: $color-main;
                     color: #fff;
-                    font-size: 11px;
-                    line-height: 16px;
+                    font-size: 0.6875rem;
+                    line-height: 1rem;
                     font-family: Roboto;
                     &:hover,
                     &.active {
@@ -237,11 +237,11 @@ header {
                   }
                   .name {
                     color: #000;
-                    font-size: 14px;
+                    font-size: 0.875rem;
                     text-align: left;
-                    line-height: 18px;
+                    line-height: 1.125rem;
                     display: block;
-                    margin-top: 7px;
+                    margin-top: 0.4375rem;
                     &:hover {
                       color: $color-hover;
                     }
@@ -250,18 +250,18 @@ header {
               }
               .btnNav {
                 display: flex;
-                gap: 10px;
-                margin-top: 15px;
+                gap: 0.625rem;
+                margin-top: 0.9375rem;
                 a {
-                  width: 25px;
-                  height: 25px;
-                  border: 1px solid #ccc;
+                  width: 1.5625rem;
+                  height: 1.5625rem;
+                  border: 0.0625rem solid #ccc;
                   display: flex;
                   align-items: center;
                   justify-content: center;
                   color: #ccc;
-                  font-size: 13px;
-                  border-radius: 2px;
+                  font-size: 0.8125rem;
+                  border-radius: 0.125rem;
                   &:hover {
                     background: $color-hover;
                     color: #fff;
@@ -285,20 +285,20 @@ header {
             display: none;
             position: absolute;
             top: 100%;
-            min-width: 300px;
+            min-width: 18.75rem;
             right: 0;
             z-index: 7;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+            border: 0.0625rem solid #ccc;
+            border-radius: 0.25rem;
             overflow: hidden;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.5);
             input {
               width: 100%;
               border: none;
-              height: 35px;
-              padding: 0 10px;
+              height: 2.1875rem;
+              padding: 0 0.625rem;
               font-family: Roboto;
-              font-size: 13px;
+              font-size: 0.8125rem;
               outline: none;
             }
             .btn_divSearchPage {
@@ -312,7 +312,7 @@ header {
 }
 
 #session {
-  margin-top: 10px;
+  margin-top: 0.625rem;
   .tabs {
     .tab {
       &-links {
@@ -328,28 +328,28 @@ header {
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 10px;
-            gap: 10px;
+            padding: 0.625rem;
+            gap: 0.625rem;
             text-transform: uppercase;
             font-family: "Roboto Condensed", sans-serif;
             color: #fff;
-            font-size: 20px;
+            font-size: 1.25rem;
             .icon img {
-              height: 30px;
+              height: 1.875rem;
             }
           }
           &:after {
             content: "";
             width: 0;
             height: 0;
-            border-left: 7px solid #fff;
-            border-top: 7px solid #fff;
-            border-bottom: 7px solid transparent;
-            border-right: 7px solid transparent;
+            border-left: 0.4375rem solid #fff;
+            border-top: 0.4375rem solid #fff;
+            border-bottom: 0.4375rem solid transparent;
+            border-right: 0.4375rem solid transparent;
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
-            bottom: -7px;
+            bottom: -0.4375rem;
             pointer-events: none;
             transform: rotate(45deg);
             display: none;
@@ -369,31 +369,31 @@ header {
           }
         }
         .item {
-          padding: 5px;
-          border: 1px solid #fff;
-          border-left: 0.5008px solid #fff;
-          border-right: 0.5008px solid #fff;
+          padding: 0.3125rem;
+          border: 0.0625rem solid #fff;
+          border-left: 0.0313rem solid #fff;
+          border-right: 0.0313rem solid #fff;
           .info {
             text-align: center;
             display: flex;
             flex-direction: column;
             .stadium {
-              font-size: 12px;
+              font-size: 0.75rem;
             }
           }
           .result {
-            margin-top: 5px;
+            margin-top: 0.3125rem;
             display: flex;
             align-items: flex-start;
             justify-content: center;
             .team_1,
             .team_2 {
               .logo {
-                width: 40px;
-                height: 40px;
-                border-radius: 4px;
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 0.25rem;
                 background: #fff;
-                padding: 4px;
+                padding: 0.25rem;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -404,7 +404,7 @@ header {
                 flex-direction: column;
               }
               .name {
-                margin-top: 3px;
+                margin-top: 0.1875rem;
                 font-weight: bold;
                 display: block;
               }
@@ -412,17 +412,17 @@ header {
             .score {
               display: flex;
               flex-direction: column;
-              margin: 0 25px;
-              min-height: 40px;
+              margin: 0 1.5625rem;
+              min-height: 2.5rem;
               align-items: center;
               justify-content: center;
               span {
-                height: 21px;
+                height: 1.3125rem;
               }
               a {
                 padding: 0;
-                font-size: 13px;
-                min-width: 40px;
+                font-size: 0.8125rem;
+                min-width: 2.5rem;
                 line-height: unset;
                 word-spacing: 0;
                 background-color: #fff;
@@ -430,7 +430,7 @@ header {
                 display: block;
                 font-weight: bold;
                 text-align: center;
-                border-radius: 20px;
+                border-radius: 1.25rem;
               }
             }
           }
@@ -445,12 +445,12 @@ header {
 
 #slideMain {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
   .group {
     .owl-dots {
       @extend %owl-dots;
       position: absolute;
-      bottom: 10px;
+      bottom: 0.625rem;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -461,19 +461,19 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
   .name {
     font-family: "Roboto Condensed", sans-serif;
     color: $color-main;
-    font-size: 23px;
+    font-size: 1.4375rem;
     font-weight: 600;
   }
   .viewMore {
     font-weight: 500;
-    padding: 7px 15px;
+    padding: 0.4375rem 0.9375rem;
     background: $color-main;
     color: #fff;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     &:hover {
       background: $color-hover;
     }
@@ -483,7 +483,7 @@ header {
 #container {
   .wrp {
     display: flex;
-    gap: 30px;
+    gap: 1.875rem;
     .colLeft {
       width: percent(1012, 1344);
     }
@@ -492,7 +492,7 @@ header {
     }
   }
   &.inside {
-    padding: 40px 0;
+    padding: 2.5rem 0;
   }
 }
 
@@ -500,31 +500,31 @@ header {
   .group {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 1.875rem;
     .item {
       background: #f8f8f9;
-      width: calc((100% - 60px) / 3);
+      width: calc((100% - 3.75rem) / 3);
       .wImage {
         &::before {
           padding-bottom: wImage(150, 316);
         }
       }
       .content {
-        padding: 20px 15px;
+        padding: 1.25rem 0.9375rem;
         .name {
           font-weight: bold;
-          line-height: 21px;
-          font-size: 16px;
+          line-height: 1.3125rem;
+          font-size: 1rem;
           display: block;
-          margin-bottom: 7px;
+          margin-bottom: 0.4375rem;
         }
         .nameCate {
-          margin-bottom: 10px;
+          margin-bottom: 0.625rem;
           background: $color-main;
           color: #fff;
-          padding: 5px 15px;
-          border-radius: 5px;
-          font-size: 12px;
+          padding: 0.3125rem 0.9375rem;
+          border-radius: 0.3125rem;
+          font-size: 0.75rem;
           &:hover {
             background: $color-hover;
           }
@@ -538,10 +538,10 @@ header {
         }
         .content {
           flex: 1;
-          padding: 20px;
+          padding: 1.25rem;
           .name {
-            font-size: 22px;
-            line-height: 30px;
+            font-size: 1.375rem;
+            line-height: 1.875rem;
           }
         }
       }
@@ -550,7 +550,7 @@ header {
 }
 
 .mediaHome {
-  margin-top: 30px;
+  margin-top: 1.875rem;
   .group {
     .item {
       position: relative;
@@ -591,21 +591,21 @@ header {
         left: 0;
         width: 100%;
         z-index: 6;
-        padding: 10px 20px;
+        padding: 0.625rem 1.25rem;
         .name {
-          font-size: 18px;
+          font-size: 1.125rem;
           font-weight: 500;
           color: #fff;
-          line-height: 25px;
+          line-height: 1.5625rem;
           display: block;
-          margin-bottom: 7px;
+          margin-bottom: 0.4375rem;
         }
         .nameCate {
           background: $color-main;
           color: #fff;
-          padding: 7px 15px;
-          border-radius: 3px;
-          font-size: 13px;
+          padding: 0.4375rem 0.9375rem;
+          border-radius: 0.1875rem;
+          font-size: 0.8125rem;
           &:hover {
             background: $color-hover;
           }
@@ -621,13 +621,17 @@ header {
 #charts {
   background: $color-hover;
   .top {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 20px;
-    line-height: 38px;
+    font-size: 1.25rem;
+    line-height: 2.375rem;
     color: #fff;
+    img {
+      max-width: 7.9375rem;
+      height: auto;
+    }
   }
   .tabs {
     .tab {
@@ -638,12 +642,12 @@ header {
         display: flex;
         align-items: flex-end;
         justify-content: center;
-        gap: 10px;
+        gap: 0.625rem;
         li {
           a {
-            padding: 15px 20px 10px 20px;
+            padding: 0.9375rem 1.25rem 0.625rem 1.25rem;
             background: #fff;
-            border-radius: 4px 4px 0 0;
+            border-radius: 0.25rem 0.25rem 0 0;
             display: block;
           }
           &:not(.active) {
@@ -657,33 +661,34 @@ header {
       &-contents {
         background: #fff;
         @extend %tabContent;
-        padding: 10px;
-        border: 1px solid #f0f0f0;
+        padding: 0.625rem;
+        border: 0.0625rem solid #f0f0f0;
         border-top: none;
         .group {
           .textGroup {
             font-weight: bold;
           }
           .table {
-            font-size: 13px;
+            font-size: 0.8125rem;
             width: 100%;
             .nameTeam {
               .icon {
-                padding: 4px;
-                border-radius: 4px;
-                border: 1px solid #ddd;
-                width: 25px;
+                padding: 0.25rem;
+                border-radius: 0.25rem;
+                border: 0.0625rem solid #ddd;
+                width: 1.5625rem;
               }
               .text {
-                font-size: 12px;
+                font-size: 0.75rem;
                 color: #333;
               }
             }
             td,
             th {
+              vertical-align: middle;
               text-align: center;
               &:nth-child(1) {
-                width: 4.375rem;
+                width: 3.125rem;
               }
               &:nth-child(2) {
                 text-align: left;
@@ -693,10 +698,10 @@ header {
         }
         .viewDetail {
           display: block;
-          margin-top: 10px;
-          margin-bottom: 5px;
-          padding: 7px 10px;
-          border: 1px solid rgba(0, 0, 0, 0.1);
+          margin-top: 0.625rem;
+          margin-bottom: 0.3125rem;
+          padding: 0.4375rem 0.625rem;
+          border: 0.0625rem solid rgba(0, 0, 0, 0.1);
           background: #f7f7f7;
           color: #333;
           text-align: center;
@@ -712,7 +717,7 @@ header {
 
 #playerRankings {
   background: $color-main;
-  padding: 10px;
+  padding: 0.625rem;
   .tabs {
     .tab {
       &-links {
@@ -722,20 +727,20 @@ header {
         display: flex;
         align-items: flex-end;
         justify-content: center;
-        margin-bottom: 15px;
+        margin-bottom: 0.9375rem;
         li {
           a {
             display: block;
-            font-size: 18px;
+            font-size: 1.125rem;
             font-weight: 400;
-            padding: 6px 12px;
-            border-bottom: 3px solid #fff;
-            padding-bottom: 10px;
+            padding: 0.375rem 0.75rem;
+            border-bottom: 0.1875rem solid #fff;
+            padding-bottom: 0.625rem;
             color: #fff;
           }
           &.active {
             a {
-              border-bottom: 3px solid $color-hover;
+              border-bottom: 0.1875rem solid $color-hover;
               color: $color-hover;
               font-weight: 500;
             }
@@ -747,7 +752,7 @@ header {
         .group {
           display: flex;
           flex-direction: column;
-          gap: 40px;
+          gap: 2.5rem;
           .item {
             .top {
               display: flex;
@@ -756,12 +761,12 @@ header {
               background: $color-hover;
               color: #fff;
               .imagePlayer {
-                width: 60px;
-                height: 60px;
+                width: 3.75rem;
+                height: 3.75rem;
                 border-radius: 50%;
-                border: 2px solid #fff;
+                border: 0.125rem solid #fff;
                 overflow: hidden;
-                margin: -5px 0 -2px 15px;
+                margin: -0.3125rem 0 -0.125rem 0.9375rem;
                 img {
                   width: 100%;
                   height: 100%;
@@ -772,8 +777,8 @@ header {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
-                padding-right: 10px;
-                font-size: 15px;
+                padding-right: 0.625rem;
+                font-size: 0.9375rem;
                 font-weight: bold;
               }
             }
@@ -782,7 +787,7 @@ header {
               justify-content: space-between;
               background: #fff;
               align-items: center;
-              padding: 10px 5px;
+              padding: 0.625rem 0.3125rem;
               .name {
                 font-weight: bold;
               }
@@ -790,13 +795,13 @@ header {
                 font-weight: bold;
                 display: flex;
                 align-items: center;
-                gap: 5px;
+                gap: 0.3125rem;
                 .icon {
-                  width: 30px;
-                  height: 30px;
-                  border: 1px solid #ddd;
-                  border-radius: 4px;
-                  padding: 4px;
+                  width: 1.875rem;
+                  height: 1.875rem;
+                  border: 0.0625rem solid #ddd;
+                  border-radius: 0.25rem;
+                  padding: 0.25rem;
                   display: flex;
                   align-items: center;
                   justify-content: center;
@@ -811,10 +816,10 @@ header {
         }
         .viewDetail {
           display: block;
-          margin-top: 20px;
-          margin-bottom: 5px;
-          padding: 7px 10px;
-          border: 1px solid rgba(0, 0, 0, 0.1);
+          margin-top: 1.25rem;
+          margin-bottom: 0.3125rem;
+          padding: 0.4375rem 0.625rem;
+          border: 0.0625rem solid rgba(0, 0, 0, 0.1);
           background: #f7f7f7;
           color: #333;
           text-align: center;
@@ -830,42 +835,42 @@ header {
 
 #linkWebsites {
   width: 100%;
-  margin: 20px 0;
-  height: 35px;
+  margin: 1.25rem 0;
+  height: 2.1875rem;
   border-color: #999;
-  border-radius: 3px;
+  border-radius: 0.1875rem;
 }
 
 #pluginShare {
   background: #f2f2f2;
-  padding: 40px 0;
+  padding: 2.5rem 0;
   .wrp {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 40px;
+    gap: 2.5rem;
     .facebook {
-      width: 400px;
+      width: 25rem;
     }
     .youtube {
       background: #fff;
       flex: 1;
-      padding-bottom: 20px;
+      padding-bottom: 1.25rem;
       .logo {
         display: flex;
         align-items: center;
         img {
-          width: 88px;
+          width: 5.5rem;
         }
-        padding: 20px;
-        gap: 10px;
+        padding: 1.25rem;
+        gap: 0.625rem;
         .text {
           font-weight: bold;
-          font-size: 24px;
+          font-size: 1.5rem;
         }
       }
       .iFrame {
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
         width: 100%;
         position: relative;
         &::before {
@@ -883,12 +888,12 @@ header {
         }
       }
       .linkTag {
-        padding: 0 20px;
+        padding: 0 1.25rem;
         display: inline-block;
       }
     }
     #slideBanner {
-      width: 416px;
+      width: 26rem;
     }
   }
 }
@@ -896,19 +901,19 @@ header {
 #donors {
   .wrp {
     .parent {
-      margin-top: 40px;
+      margin-top: 2.5rem;
       .title {
         text-transform: uppercase;
         text-align: center;
-        font-size: 27px;
-        line-height: 38px;
+        font-size: 1.6875rem;
+        line-height: 2.375rem;
         font-family: "Roboto Condensed", sans-serif;
       }
       .group {
         display: flex;
         justify-content: center;
-        gap: 20px;
-        margin-top: 20px;
+        gap: 1.25rem;
+        margin-top: 1.25rem;
         flex-wrap: wrap;
         > * {
           max-width: 100%;
@@ -934,7 +939,7 @@ header {
     justify-content: center;
     li {
       a {
-        padding: 10px 15px;
+        padding: 0.625rem 0.9375rem;
         display: block;
       }
       &:hover a {
@@ -946,16 +951,16 @@ header {
 #infoPage {
   background: #151d2d;
   color: #fff;
-  padding: 30px 0;
+  padding: 1.875rem 0;
   .wrp {
     display: flex;
-    gap: 45px;
+    gap: 2.8125rem;
     flex-wrap: wrap;
     .item {
-      width: calc((100% - 90px) / 3);
+      width: calc((100% - 5.625rem) / 3);
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 0.625rem;
       .text {
         flex: 1;
         display: flex;
@@ -964,7 +969,7 @@ header {
           text-transform: uppercase;
         }
         &.link {
-          gap: 20px;
+          gap: 1.25rem;
           flex-direction: row;
           a {
             color: #81d4fa;
@@ -977,28 +982,28 @@ header {
 
 #copyRight {
   .wrp {
-    font-size: 12px;
+    font-size: 0.75rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     img {
-      height: 52px;
+      height: 3.25rem;
     }
   }
 }
 #listSocial {
   background: $color-hover;
-  padding: 10px 0;
-  margin-top: 50px;
+  padding: 0.625rem 0;
+  margin-top: 3.125rem;
   .wrp {
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
     justify-content: center;
     .item {
       color: #fff;
-      width: 36px;
-      height: 36px;
-      border: 1px solid #fff;
+      width: 2.25rem;
+      height: 2.25rem;
+      border: 0.0625rem solid #fff;
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -1014,26 +1019,26 @@ header {
 #news {
   .titleCate {
     text-transform: uppercase;
-    font-size: 30px;
-    line-height: 38px;
+    font-size: 1.875rem;
+    line-height: 2.375rem;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
   }
   .catesort {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     .listCate {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-      gap: 5px;
+      gap: 0.3125rem;
       .listCate_item {
-        padding: 7px 15px 5px 15px;
+        padding: 0.4375rem 0.9375rem 0.3125rem 0.9375rem;
         background: $color-main;
         color: #fff;
         display: block;
-        border-radius: 3px;
+        border-radius: 0.1875rem;
         &.active,
         &:hover {
           background: $color-hover;
@@ -1041,17 +1046,17 @@ header {
       }
     }
     .sort {
-      width: 150px;
+      width: 9.375rem;
     }
   }
   &.list {
     .main {
-      margin-bottom: 40px;
+      margin-bottom: 2.5rem;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
-      grid-column-gap: 10px;
-      grid-row-gap: 10px;
+      grid-column-gap: 0.625rem;
+      grid-row-gap: 0.625rem;
       .item {
         position: relative;
         &:before {
@@ -1102,22 +1107,22 @@ header {
           width: 100%;
           z-index: 6;
           color: #fff;
-          padding: 15px;
+          padding: 0.9375rem;
           .nameCate {
-            padding: 5px 10px;
+            padding: 0.3125rem 0.625rem;
             background: $color-main;
             color: #fff;
-            font-size: 12px;
-            border-radius: 4px;
+            font-size: 0.75rem;
+            border-radius: 0.25rem;
             &:hover {
               background: $color-hover;
             }
           }
           .name {
-            font-size: 20px;
+            font-size: 1.25rem;
             display: block;
-            line-height: 27px;
-            margin-top: 6px;
+            line-height: 1.6875rem;
+            margin-top: 0.375rem;
             font-family: "Roboto Condensed", sans-serif;
             font-weight: 500;
           }
@@ -1127,14 +1132,14 @@ header {
     .group {
       display: flex;
       flex-wrap: wrap;
-      gap: 25px;
+      gap: 1.5625rem;
       .item {
-        width: calc((100% - 30px) / 2);
+        width: calc((100% - 1.875rem) / 2);
         display: flex;
-        gap: 15px;
+        gap: 0.9375rem;
         align-items: flex-start;
         .wImage {
-          width: 100px;
+          width: 6.25rem;
           &:before {
             padding-bottom: wImage(70, 100);
           }
@@ -1142,18 +1147,18 @@ header {
         .info {
           flex: 1;
           .name {
-            font-size: 14px;
-            line-height: 20px;
+            font-size: 0.875rem;
+            line-height: 1.25rem;
             font-weight: bold;
             display: block;
-            margin-bottom: 5px;
+            margin-bottom: 0.3125rem;
           }
           .nameCate {
-            padding: 5px 10px;
+            padding: 0.3125rem 0.625rem;
             background: $color-main;
             color: #fff;
-            font-size: 12px;
-            border-radius: 4px;
+            font-size: 0.75rem;
+            border-radius: 0.25rem;
             &:hover {
               background: $color-hover;
             }
@@ -1164,7 +1169,7 @@ header {
     &.nofication {
       .group {
         .item {
-          width: calc((100% - 60px) / 3);
+          width: calc((100% - 3.75rem) / 3);
         }
       }
     }
@@ -1184,7 +1189,7 @@ header {
               top: 50%;
               left: 50%;
               transform: translateX(-50%) translateY(-50%);
-              font-size: 20px;
+              font-size: 1.25rem;
               pointer-events: none;
             }
           }
@@ -1195,35 +1200,35 @@ header {
   &.detail {
     .titleCate {
       text-transform: none;
-      margin-bottom: 20px;
+      margin-bottom: 1.25rem;
     }
     .description {
       font-weight: bold;
-      font-size: 16px;
-      line-height: 26px;
+      font-size: 1rem;
+      line-height: 1.625rem;
     }
     .contentDetail {
-      margin-top: 20px;
-      font-size: 15px;
-      line-height: 26px;
+      margin-top: 1.25rem;
+      font-size: 0.9375rem;
+      line-height: 1.625rem;
     }
     .other {
-      margin-top: 40px;
+      margin-top: 2.5rem;
       .tabs {
         .tab-links {
           margin: 0;
           padding: 0;
-          margin-bottom: 20px;
+          margin-bottom: 1.25rem;
           list-style: none;
           display: flex;
           text-transform: uppercase;
-          border-bottom: 2px solid $color-hover;
+          border-bottom: 0.125rem solid $color-hover;
           li {
             a {
               font-weight: bold;
-              padding: 5px 10px 3px 10px;
+              padding: 0.3125rem 0.625rem 0.1875rem 0.625rem;
               display: block;
-              font-size: 13px;
+              font-size: 0.8125rem;
             }
             &.active {
               background: $color-hover;
@@ -1238,14 +1243,14 @@ header {
               &:before {
                 padding-bottom: wImage(150, 218);
               }
-              border-radius: 4px;
+              border-radius: 0.25rem;
               .nameCate {
                 position: absolute;
                 bottom: 0;
                 left: 0;
                 z-index: 5;
-                padding: 5px 15px;
-                font-size: 12px;
+                padding: 0.3125rem 0.9375rem;
+                font-size: 0.75rem;
                 background: $color-main;
                 color: #fff;
                 display: inline-block;
@@ -1256,9 +1261,9 @@ header {
             }
             .name {
               display: block;
-              margin-top: 10px;
+              margin-top: 0.625rem;
               font-weight: bold;
-              line-height: 21px;
+              line-height: 1.3125rem;
             }
           }
         }
@@ -1269,18 +1274,18 @@ header {
 .nextPrevNews {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
-  gap: 50px;
+  margin-top: 1.875rem;
+  gap: 3.125rem;
   > * {
     flex: 1;
     .title {
-      font-size: 12px;
+      font-size: 0.75rem;
       color: #c1c1c1;
-      margin-bottom: 7px;
+      margin-bottom: 0.4375rem;
     }
     .name {
-      font-size: 15px;
-      line-height: 23px;
+      font-size: 0.9375rem;
+      line-height: 1.4375rem;
     }
     &:last-child {
       display: flex;
@@ -1293,24 +1298,24 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 30px;
-  font-size: 13px;
+  margin-top: 1.875rem;
+  font-size: 0.8125rem;
   ul {
     flex: 1;
     padding: 0;
     margin: 0;
     list-style: none;
     display: flex;
-    gap: 8px;
+    gap: 0.5rem;
     li {
       a {
-        padding: 0 10px;
-        min-width: 33px;
-        height: 33px;
+        padding: 0 0.625rem;
+        min-width: 2.0625rem;
+        height: 2.0625rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid #e3e3e3;
+        border: 0.0625rem solid #e3e3e3;
         color: #666;
       }
       &.active a,
@@ -1323,18 +1328,18 @@ header {
   }
 }
 .plugShare {
-  padding: 20px 0;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  padding: 1.25rem 0;
+  border-top: 0.0625rem solid #ddd;
+  border-bottom: 0.0625rem solid #ddd;
   display: flex;
-  gap: 8px;
+  gap: 0.5rem;
   .item {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 3px;
+    border-radius: 0.1875rem;
     background: var(--bg);
     color: #fff;
     &:hover {
@@ -1345,40 +1350,40 @@ header {
 #pathWay {
   background: var(--bg);
   background-repeat: no-repeat;
-  min-height: 184px;
+  min-height: 11.5rem;
   display: flex;
   align-items: center;
   .wrp {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 500;
   }
 }
 
 #ListTeam {
   .titleModule {
-    font-size: 27px;
-    line-height: 38px;
+    font-size: 1.6875rem;
+    line-height: 2.375rem;
     font-weight: bold;
   }
   #chooseSession {
-    height: 35px;
-    width: 300px;
+    height: 2.1875rem;
+    width: 18.75rem;
     border-color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
   .group {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1.25rem;
     .item {
-      width: calc((100% - 100px) / 6);
-      border: 1px solid #ccc;
-      padding: 10px;
+      width: calc((100% - 6.25rem) / 6);
+      border: 0.0625rem solid #ccc;
+      padding: 0.625rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      border-radius: 4px;
+      border-radius: 0.25rem;
       transition: 0.3s all ease-in-out;
       .logo {
         display: flex;
@@ -1389,11 +1394,11 @@ header {
         }
       }
       .text {
-        margin-top: 15px;
+        margin-top: 0.9375rem;
         font-weight: 500;
       }
       &:hover {
-        box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
       }
     }
   }
@@ -1403,19 +1408,19 @@ header {
   width: 100%;
   .titleModule {
     font-weight: bold;
-    font-size: 30px;
-    margin-bottom: 15px;
+    font-size: 1.875rem;
+    margin-bottom: 0.9375rem;
   }
   .tableContent {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
     .chooseSession {
-      width: 250px;
-      height: 30px;
+      width: 15.625rem;
+      height: 1.875rem;
       float: right;
     }
-    margin-top: 20px;
+    margin-top: 1.25rem;
     .group {
-      margin-top: 20px;
+      margin-top: 1.25rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -1423,11 +1428,11 @@ header {
         text-align: center;
         display: block;
         font-weight: bold;
-        margin-bottom: 15px;
-        font-size: 17px;
+        margin-bottom: 0.9375rem;
+        font-size: 1.0625rem;
       }
       .table {
-        width: 1000px;
+        width: 62.5rem;
         max-width: 100%;
         thead {
           background: $color-hover;
@@ -1446,14 +1451,14 @@ header {
               .nameTeam {
                 display: flex;
                 align-items: center;
-                gap: 10px;
+                gap: 0.625rem;
                 .icon {
-                  width: 40px;
-                  height: 40px;
+                  width: 2.5rem;
+                  height: 2.5rem;
                   background: #fff;
-                  border-radius: 3px;
-                  border: 1px solid #ccc;
-                  padding: 4px;
+                  border-radius: 0.1875rem;
+                  border: 0.0625rem solid #ccc;
+                  padding: 0.25rem;
                   img {
                     max-width: 100%;
                     height: auto;
@@ -1472,10 +1477,10 @@ header {
       }
     }
     .note {
-      margin-top: 20px;
+      margin-top: 1.25rem;
       display: flex;
       flex-wrap: wrap;
-      gap: 10px 0;
+      gap: 0.625rem 0;
       > * {
         width: calc(100% / 5);
       }
@@ -1488,14 +1493,14 @@ header {
   margin: 0;
   list-style: none;
   display: flex;
-  gap: 10px;
-  margin-top: -36px;
+  gap: 0.625rem;
+  margin-top: -2.25rem;
   li {
     a {
       display: flex;
-      height: 36px;
-      padding: 0 20px;
-      border-radius: 5px 5px 0 0;
+      height: 2.25rem;
+      padding: 0 1.25rem;
+      border-radius: 0.3125rem 0.3125rem 0 0;
       background: #fff;
       align-items: center;
       justify-content: center;
@@ -1513,13 +1518,13 @@ header {
 
 #hightLight {
   .parent {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
     .group {
       display: flex;
       flex-wrap: wrap;
-      gap: 25px;
+      gap: 1.5625rem;
       .item {
-        width: calc((100% - 50px) / 3);
+        width: calc((100% - 3.125rem) / 3);
         position: relative;
         .wImage {
           &::before {
@@ -1551,7 +1556,7 @@ header {
           z-index: 7;
           font-family: "FontAwesome";
           font-weight: 300;
-          font-size: 50px;
+          font-size: 3.125rem;
           color: #ccc;
         }
         .info {
@@ -1565,26 +1570,26 @@ header {
           display: flex;
           flex-direction: column;
           align-items: flex-start;
-          padding: 20px 10px;
+          padding: 1.25rem 0.625rem;
           .nameCate {
-            padding: 5px 15px;
+            padding: 0.3125rem 0.9375rem;
             background: $color-hover;
             color: #fff;
-            font-size: 12px;
-            margin-bottom: 10px;
+            font-size: 0.75rem;
+            margin-bottom: 0.625rem;
             display: inline-block;
           }
           .name {
             font-weight: bold;
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 1rem;
+            line-height: 1.5rem;
           }
         }
         &.colspan2 {
-          width: calc(((100% - 50px) / 3) * 2 + 25px);
+          width: calc(((100% - 3.125rem) / 3) * 2 + 1.5625rem);
           .wImage {
             height: 100%;
-            min-height: 395px;
+            min-height: 24.6875rem;
             &::before {
               padding-bottom: 0;
             }
@@ -1598,38 +1603,38 @@ header {
 #vote {
   .titleModule {
     text-transform: uppercase;
-    font-size: 25px;
-    margin-bottom: 20px;
+    font-size: 1.5625rem;
+    margin-bottom: 1.25rem;
     font-weight: 500;
   }
   .listVote {
-    margin: 40px 0;
+    margin: 2.5rem 0;
     .title {
       font-weight: bold;
-      font-size: 18px;
-      margin-bottom: 15px;
-      line-height: 26px;
+      font-size: 1.125rem;
+      margin-bottom: 0.9375rem;
+      line-height: 1.625rem;
     }
     .group {
-      border: 1px solid #dddddd;
+      border: 0.0625rem solid #dddddd;
       .item {
-        padding: 16px;
-        border-bottom: 1px solid #dddddd;
+        padding: 1rem;
+        border-bottom: 0.0625rem solid #dddddd;
         &:last-child {
           border-bottom: none;
         }
         .percent {
           display: flex;
           align-items: center;
-          gap: 10px;
+          gap: 0.625rem;
           .text {
-            font-size: 12px;
+            font-size: 0.75rem;
           }
           .bar {
             background: linear-gradient(to right, #2196f3 0%, #1976d2 100%);
             width: var(--percent);
-            height: 13px;
-            border-radius: 20px;
+            height: 0.8125rem;
+            border-radius: 1.25rem;
           }
         }
       }
@@ -1642,24 +1647,24 @@ header {
     .sessionName {
       display: flex;
       align-items: center;
-      gap: 15px;
+      gap: 0.9375rem;
       .text {
-        font-size: 25px;
+        font-size: 1.5625rem;
         font-weight: bold;
       }
-      margin-bottom: 30px;
+      margin-bottom: 1.875rem;
     }
     .group {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 1.25rem;
       .item {
         display: flex;
         width: 100%;
-        gap: 15px;
+        gap: 0.9375rem;
         .wImage {
-          border-radius: 3px;
-          width: 120px;
+          border-radius: 0.1875rem;
+          width: 7.5rem;
           &:before {
             padding-bottom: wImage(2, 3);
           }
@@ -1669,18 +1674,18 @@ header {
           flex: 1;
           .name {
             font-weight: bold;
-            font-size: 16px;
-            line-height: 23px;
+            font-size: 1rem;
+            line-height: 1.4375rem;
             display: block;
           }
           .nameCate {
-            padding: 5px 15px;
+            padding: 0.3125rem 0.9375rem;
             background: $color-hover;
             color: #fff;
             display: inline-block;
-            font-size: 12px;
-            border-radius: 4px;
-            margin-top: 3px;
+            font-size: 0.75rem;
+            border-radius: 0.25rem;
+            margin-top: 0.1875rem;
           }
         }
         &:nth-child(1) {
@@ -1689,17 +1694,17 @@ header {
             width: percent(676, 1010);
           }
           .info {
-            padding: 15px 10px;
+            padding: 0.9375rem 0.625rem;
             .name {
               position: relative;
-              font-size: 20px;
-              line-height: 28px;
-              margin-bottom: 5px;
-              padding-top: 10px;
+              font-size: 1.25rem;
+              line-height: 1.75rem;
+              margin-bottom: 0.3125rem;
+              padding-top: 0.625rem;
               &::before {
                 content: "";
-                height: 2px;
-                width: 60px;
+                height: 0.125rem;
+                width: 3.75rem;
                 background: $color-hover;
                 display: block;
                 position: absolute;
@@ -1714,16 +1719,16 @@ header {
         &:nth-child(4) {
           gap: 0;
           background: #f8f8f9;
-          width: calc((100% - 40px) / 3);
+          width: calc((100% - 2.5rem) / 3);
           flex-direction: column;
           .wImage {
             width: 100%;
           }
           .info {
-            padding: 10px 15px 30px 15px;
+            padding: 0.625rem 0.9375rem 1.875rem 0.9375rem;
             .name {
-              font-size: 16px;
-              line-height: 23px;
+              font-size: 1rem;
+              line-height: 1.4375rem;
             }
           }
         }
@@ -1732,18 +1737,18 @@ header {
     .viewMore {
       color: #a5a5a5;
       display: inline-block;
-      font-size: 12px;
-      padding: 3px 15px;
-      border: 1px solid #c9c9c9;
+      font-size: 0.75rem;
+      padding: 0.1875rem 0.9375rem;
+      border: 0.0625rem solid #c9c9c9;
       text-align: center;
       vertical-align: middle;
-      border-radius: 3px;
+      border-radius: 0.1875rem;
       &:hover {
         background: $color-hover;
         color: #fff;
         border-color: $color-hover;
       }
-      margin-top: 20px;
+      margin-top: 1.25rem;
     }
   }
 }
@@ -1753,8 +1758,8 @@ header {
   &.detail {
     .nameMatch {
       font-weight: bold;
-      font-size: 30px;
-      margin-bottom: 15px;
+      font-size: 1.875rem;
+      margin-bottom: 0.9375rem;
       display: block;
     }
     .infoMatch {
@@ -1764,11 +1769,11 @@ header {
       .top {
         display: flex;
         justify-content: space-between;
-        border-bottom: 1px solid #fff;
-        padding: 10px 20px;
+        border-bottom: 0.0625rem solid #fff;
+        padding: 0.625rem 1.25rem;
         > p {
           display: flex;
-          gap: 7px;
+          gap: 0.4375rem;
           align-items: center;
         }
       }
@@ -1776,30 +1781,30 @@ header {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding: 40px 0;
-        border-bottom: 1px solid #fff;
+        padding: 2.5rem 0;
+        border-bottom: 0.0625rem solid #fff;
         .team {
           display: flex;
           align-items: center;
-          gap: 20px;
+          gap: 1.25rem;
           .image {
             background: #fff;
-            border-radius: 4px;
-            width: 60px;
-            height: 60px;
-            padding: 5px;
+            border-radius: 0.25rem;
+            width: 3.75rem;
+            height: 3.75rem;
+            padding: 0.3125rem;
             img {
               max-width: 100%;
             }
           }
           .name {
             font-weight: bold;
-            font-size: 15px;
+            font-size: 0.9375rem;
           }
         }
         .score {
-          font-size: 50px;
-          letter-spacing: 25px;
+          font-size: 3.125rem;
+          letter-spacing: 1.5625rem;
           font-weight: 500;
           flex: 1;
         }
@@ -1815,55 +1820,55 @@ header {
           > a {
             display: block;
             text-transform: uppercase;
-            padding: 10px 0 5px 0;
+            padding: 0.625rem 0 0.3125rem 0;
             text-align: center;
-            font-size: 15px;
+            font-size: 0.9375rem;
             font-weight: 500;
-            border-bottom: 3px solid transparent;
+            border-bottom: 0.1875rem solid transparent;
           }
           &.active a {
-            border-bottom: 3px solid $color-hover;
+            border-bottom: 0.1875rem solid $color-hover;
           }
         }
       }
     }
     .tab-contents {
       @extend %tabContent;
-      margin-bottom: 40px;
+      margin-bottom: 2.5rem;
       .tab {
-        border: 1px solid $color-main;
-        padding: 10px;
+        border: 0.0625rem solid $color-main;
+        padding: 0.625rem;
         .titleDiv {
           text-transform: uppercase;
           background: $color-main;
           color: #fff;
           font-weight: bold;
-          padding: 7px 15px 5px 15px;
+          padding: 0.4375rem 0.9375rem 0.3125rem 0.9375rem;
         }
         .playerStatistics {
-          margin: 20px 0;
-          border: 1px solid $color-main;
+          margin: 1.25rem 0;
+          border: 0.0625rem solid $color-main;
           .teamMath {
             display: flex;
             justify-content: space-between;
-            padding: 10px 20px;
+            padding: 0.625rem 1.25rem;
             .team {
               display: flex;
               align-items: center;
-              gap: 10px;
+              gap: 0.625rem;
               .image {
                 background: #fff;
-                border-radius: 4px;
-                width: 40px;
-                height: 40px;
-                padding: 5px;
-                border: 1px solid #ccc;
+                border-radius: 0.25rem;
+                width: 2.5rem;
+                height: 2.5rem;
+                padding: 0.3125rem;
+                border: 0.0625rem solid #ccc;
                 img {
                   max-width: 100%;
                 }
               }
               .name {
-                font-size: 14px;
+                font-size: 0.875rem;
               }
             }
           }
@@ -1874,7 +1879,7 @@ header {
                 &:nth-child(2),
                 &:nth-child(3),
                 &:nth-child(4) {
-                  width: 110px;
+                  width: 6.875rem;
                 }
               }
               td {
@@ -1890,17 +1895,17 @@ header {
         }
         .otherInfomation {
           .noidung {
-            border: 1px solid $color-main;
-            padding: 10px;
+            border: 0.0625rem solid $color-main;
+            padding: 0.625rem;
           }
         }
         .squad {
           display: flex;
-          gap: 40px;
+          gap: 2.5rem;
           .group {
             flex: 1;
             .table {
-              margin-top: 10px;
+              margin-top: 0.625rem;
               table-layout: fixed;
               td {
                 text-align: center;
@@ -1908,17 +1913,17 @@ header {
                 &:nth-child(1),
                 &:nth-child(2),
                 &:nth-child(4) {
-                  width: 70px;
+                  width: 4.375rem;
                 }
                 &:nth-child(3) {
                   text-align: left;
                 }
                 .image {
-                  border: 1px solid #ccc;
-                  border-radius: 3px;
-                  padding: 4px;
-                  width: 40px;
-                  height: 40px;
+                  border: 0.0625rem solid #ccc;
+                  border-radius: 0.1875rem;
+                  padding: 0.25rem;
+                  width: 2.5rem;
+                  height: 2.5rem;
                   display: block;
                   img {
                     width: 100%;
@@ -1939,41 +1944,41 @@ header {
     display: flex;
     align-items: center;
     .logo {
-      padding-right: 15px;
-      border-right: 1px solid #ccc;
+      padding-right: 0.9375rem;
+      border-right: 0.0625rem solid #ccc;
       img {
-        width: 183px;
+        width: 11.4375rem;
         height: auto;
       }
     }
     .stadium {
       flex: 1;
-      padding-left: 30px;
+      padding-left: 1.875rem;
       .nameTeam {
-        font-size: 30px;
+        font-size: 1.875rem;
         font-weight: bold;
         display: block;
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
       }
       .afterName {
         display: flex;
         .item {
           align-items: center;
-          gap: 20px;
+          gap: 1.25rem;
           flex: 1;
           display: flex;
           .text {
             display: flex;
             flex-direction: column;
-            gap: 10px;
-            font-size: 18px;
+            gap: 0.625rem;
+            font-size: 1.125rem;
           }
         }
       }
     }
   }
   .tabs {
-    margin-top: 40px;
+    margin-top: 2.5rem;
     .tab-links {
       margin: 0;
       padding: 0;
@@ -1984,10 +1989,10 @@ header {
         flex: 1;
         a {
           text-transform: uppercase;
-          padding: 10px 0;
+          padding: 0.625rem 0;
           text-align: center;
           display: block;
-          font-size: 17px;
+          font-size: 1.0625rem;
           font-weight: 500;
           color: #fff;
           min-height: 100%;
@@ -2002,11 +2007,11 @@ header {
     .tab-contents {
       width: 100%;
       @extend %tabContent;
-      border: 1px solid $color-main;
+      border: 0.0625rem solid $color-main;
       border-top: none;
-      padding: 20px;
+      padding: 1.25rem;
       .table {
-        margin-top: 20px;
+        margin-top: 1.25rem;
         thead {
           background: $color-main;
           color: #fff;
@@ -2020,22 +2025,22 @@ header {
         }
         tbody {
           td {
-            min-width: 100px;
+            min-width: 6.25rem;
             vertical-align: middle;
             text-align: center;
             .player {
               display: flex;
               align-items: center;
-              gap: 7px;
+              gap: 0.4375rem;
               .js_div_particName {
                 white-space: nowrap;
               }
               .image {
-                width: 40px;
+                width: 2.5rem;
                 background: #fff;
-                border: 1px solid #ccc;
-                padding: 4px;
-                border-radius: 3px;
+                border: 0.0625rem solid #ccc;
+                padding: 0.25rem;
+                border-radius: 0.1875rem;
               }
             }
           }
@@ -2049,9 +2054,9 @@ header {
   width: 100%;
   .namePlayer {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 1.875rem;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
   .tabs {
     .tab-links {
@@ -2064,7 +2069,7 @@ header {
         a {
           display: block;
           text-align: center;
-          padding: 7px 10px;
+          padding: 0.4375rem 0.625rem;
           background: $color-main;
           color: #fff;
           text-transform: uppercase;
@@ -2077,17 +2082,17 @@ header {
     }
     .tab-contents {
       @extend %tabContent;
-      margin: 20px 0 40px 0;
+      margin: 1.25rem 0 2.5rem 0;
       .tablestatistic {
         table-layout: fixed;
         td {
           vertical-align: middle;
           text-align: center;
           &:nth-child(1) {
-            width: 500px;
+            width: 31.25rem;
             text-align: left;
             img {
-              margin-right: 10px;
+              margin-right: 0.625rem;
             }
           }
         }
@@ -2100,15 +2105,15 @@ header {
       }
       .infoPlayer {
         display: flex;
-        gap: 30px;
+        gap: 1.875rem;
         align-items: center;
         .image {
-          border: 1px solid #ccc;
-          padding: 10px;
-          border-radius: 5px;
+          border: 0.0625rem solid #ccc;
+          padding: 0.625rem;
+          border-radius: 0.3125rem;
           overflow: hidden;
           img {
-            width: 250px;
+            width: 15.625rem;
           }
         }
         .right {
@@ -2116,13 +2121,13 @@ header {
           .table {
             width: auto;
             td:nth-child(1) {
-              width: 150px;
+              width: 9.375rem;
             }
             td:nth-child(2) {
-              min-width: 200px;
+              min-width: 12.5rem;
               &::before {
                 content: ":";
-                margin-right: 10px;
+                margin-right: 0.625rem;
               }
             }
           }
@@ -2133,28 +2138,28 @@ header {
 }
 
 select {
-  height: 35px;
+  height: 2.1875rem;
   border-color: #ccc;
-  border-radius: 3px;
-  padding: 0 10px;
+  border-radius: 0.1875rem;
+  padding: 0 0.625rem;
 }
 
 #schedule {
   width: 100%;
   .nameSchedule {
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
     display: block;
   }
   .tabMonth {
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     .item {
       flex: 1;
       text-align: center;
       display: block;
-      line-height: 45px;
+      line-height: 2.8125rem;
       background: #e3e3e3;
       font-weight: 500;
       &:hover,
@@ -2166,15 +2171,15 @@ select {
   }
   .search {
     display: flex;
-    margin-bottom: 20px;
-    gap: 15px;
+    margin-bottom: 1.25rem;
+    gap: 0.9375rem;
     select {
       flex: 1;
     }
     .btnSearch {
-      height: 35px;
-      padding: 0 20px;
-      border-radius: 4px;
+      height: 2.1875rem;
+      padding: 0 1.25rem;
+      border-radius: 0.25rem;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -2186,32 +2191,32 @@ select {
     }
   }
   .round {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     .titleRound {
-      padding: 8px;
-      font-size: 17px;
+      padding: 0.5rem;
+      font-size: 1.0625rem;
       display: block;
       text-align: center;
       background: $color-hover;
       color: #fff;
-      margin-bottom: 10px;
+      margin-bottom: 0.625rem;
     }
     .group {
-      padding: 0 20px;
+      padding: 0 1.25rem;
       display: flex;
       align-items: center;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #e3e3e3;
-      margin-bottom: 20px;
-      gap: 40px;
+      padding-bottom: 1.25rem;
+      border-bottom: 0.0625rem solid #e3e3e3;
+      margin-bottom: 1.25rem;
+      gap: 2.5rem;
       &:last-child {
         margin: 0;
-        padding: 0 20px;
+        padding: 0 1.25rem;
         border: none;
       }
       .time {
         font-weight: bold;
-        font-size: 15px;
+        font-size: 0.9375rem;
       }
       .table-responsive {
         flex: 1;
@@ -2223,10 +2228,10 @@ select {
             &:nth-child(1),
             &:nth-child(4),
             &:nth-child(6) {
-              width: 120px;
+              width: 7.5rem;
             }
             &:nth-child(5) {
-              width: 90px;
+              width: 5.625rem;
             }
           }
         }
@@ -2238,9 +2243,9 @@ select {
 #goaltatistics {
   width: 100%;
   .nameGoalStatistics {
-    font-size: 25px;
+    font-size: 1.5625rem;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
     display: block;
   }
   .table {
@@ -2256,14 +2261,14 @@ select {
 }
 #bttop {
   position: fixed;
-  right: 10px;
-  bottom: 10px;
-  font-size: 25px;
-  width: 40px;
-  height: 40px;
+  right: 0.625rem;
+  bottom: 0.625rem;
+  font-size: 1.5625rem;
+  width: 2.5rem;
+  height: 2.5rem;
   background: #ccc;
-  border-radius: 4px;
-  line-height: 40px;
+  border-radius: 0.25rem;
+  line-height: 2.5rem;
   text-align: center;
   z-index: 10;
   display: none;
