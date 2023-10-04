@@ -1179,6 +1179,16 @@ a:hover {
   color: #7ec83b;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 10;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+  box-shadow: 0 0 10px rgba(204, 204, 204, 0.5);
+  padding: 5px 0;
+}
 header .wrp {
   display: flex;
   justify-content: space-between;
@@ -1186,8 +1196,9 @@ header .wrp {
   align-items: flex-end;
 }
 header .wrp .logo img {
-  width: 8.5rem;
+  max-width: 8.5rem;
   height: auto;
+  max-height: 61px;
 }
 header .wrp .right {
   width: calc(100% - 9.75rem);
@@ -1215,8 +1226,6 @@ header .wrp .right .menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #003059;
-  color: #fff;
   padding: 0 1.25rem;
   gap: 2.5rem;
 }
@@ -1295,7 +1304,7 @@ header .wrp .right .menu #menu li ul li a {
   text-align: left;
 }
 header .wrp .right .menu #menu li ul li:hover > a {
-  background: #003059;
+  background: #7ec83b;
   color: #fff;
 }
 header .wrp .right .menu #menu li ul li ul {
@@ -1710,7 +1719,7 @@ header .wrp .right .menu #menu .divSearchPage .btn_divSearchPage {
   max-width: 7.9375rem;
   height: auto;
 }
-#charts .tabs .tab-links {
+#charts .tabs .tab-links:is(ul) {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -1719,13 +1728,23 @@ header .wrp .right .menu #menu .divSearchPage .btn_divSearchPage {
   justify-content: center;
   gap: 0.625rem;
 }
-#charts .tabs .tab-links li a {
+#charts .tabs .tab-links:is(ul) li a {
   padding: 0.9375rem 1.25rem 0.625rem 1.25rem;
   background: #fff;
   border-radius: 0.25rem 0.25rem 0 0;
   display: block;
 }
-#charts .tabs .tab-links li:not(.active) a {
+#charts .tabs .tab-links:is(ul) li:not(.active) a {
+  background: #003059;
+  color: #fff;
+}
+#charts .tabs .tab-links:is(select) {
+  border-top: none;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  border-radius: 0;
+  border-color: #f0f0f0;
   background: #003059;
   color: #fff;
 }
@@ -1784,7 +1803,7 @@ header .wrp .right .menu #menu .divSearchPage .btn_divSearchPage {
   background: #003059;
   padding: 0.625rem;
 }
-#playerRankings .tabs .tab-links {
+#playerRankings .tabs .tab-links:is(ul) {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -1793,7 +1812,7 @@ header .wrp .right .menu #menu .divSearchPage .btn_divSearchPage {
   justify-content: center;
   margin-bottom: 0.9375rem;
 }
-#playerRankings .tabs .tab-links li a {
+#playerRankings .tabs .tab-links:is(ul) li a {
   display: block;
   font-size: 1.125rem;
   font-weight: 400;
@@ -1802,10 +1821,18 @@ header .wrp .right .menu #menu .divSearchPage .btn_divSearchPage {
   padding-bottom: 0.625rem;
   color: #fff;
 }
-#playerRankings .tabs .tab-links li.active a {
+#playerRankings .tabs .tab-links:is(ul) li.active a {
   border-bottom: 0.1875rem solid #7ec83b;
   color: #7ec83b;
   font-weight: 500;
+}
+#playerRankings .tabs .tab-links:is(select) {
+  border: none;
+  width: 80%;
+  outline: none;
+  padding: 0 10px;
+  margin-left: 10%;
+  margin-bottom: 25px;
 }
 #playerRankings .tabs .tab-contents .group {
   display: flex;
@@ -1960,20 +1987,25 @@ header .wrp .right .menu #menu .divSearchPage .btn_divSearchPage {
   font-size: 1.6875rem;
   line-height: 2.375rem;
   font-family: "Roboto Condensed", sans-serif;
+  margin-bottom: 15px;
 }
 #donors .wrp .parent .group {
-  display: flex;
-  justify-content: center;
-  gap: 1.25rem;
-  margin-top: 1.25rem;
-  flex-wrap: wrap;
+  overflow: hidden;
 }
 #donors .wrp .parent .group > * {
   max-width: 100%;
 }
 #donors .wrp .parent .group > * img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
+}
+#donors .wrp .parent .owl-stage-outer {
+  display: table;
+  width: 100%;
+  max-width: 100%;
+}
+#donors .wrp .parent .owl-stage-outer .owl-stage {
+  margin: auto;
 }
 
 #menuFoot {
@@ -2792,7 +2824,6 @@ header .wrp .right .menu #menu .divSearchPage .btn_divSearchPage {
   font-size: 3.125rem;
   letter-spacing: 1.5625rem;
   font-weight: 500;
-  flex: 1;
 }
 #match.detail .infoMatch .tab-links {
   display: flex;

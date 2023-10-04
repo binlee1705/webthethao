@@ -9,8 +9,8 @@
   }
   .openList hr {
     -moz-transition: 0.5s all ease-in-out;
-    background: #fff;
-    border: 1px solid #fff;
+    background: #000;
+    border: 1px solid #000;
     transition: 0.5s all ease-in-out;
     z-index: 98;
     opacity: 1;
@@ -45,15 +45,19 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     z-index: 20;
     display: none;
   }
   header {
-    position: relative;
+    position: sticky;
+  }
+  header .wrp {
+    align-items: center;
   }
   header .wrp .right .menu {
     padding: 10px 20px;
+    justify-content: flex-end;
   }
   header .wrp .right .menu #menu {
     position: fixed;
@@ -68,6 +72,7 @@
     display: block;
     padding: 1.25rem 0;
     transition: 0.3s all ease-in-out;
+    color: #fff;
   }
   header .wrp .right .menu #menu.active {
     left: 0;
@@ -480,15 +485,6 @@
   }
 }
 @media (max-width: 479px) {
-  header {
-    padding-top: 20px;
-  }
-  header .wrp {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
   header .wrp .right {
     width: 100%;
     flex-direction: column-reverse;

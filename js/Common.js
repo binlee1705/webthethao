@@ -13,11 +13,11 @@ function owlslide(
   autoplayTimeout = 5000
 ) {
   var option = {
-    items: num,
+    items: items[0],
     autoplay: num > items[0] ? autoplay : false,
     autoplayTimeout: autoplayTimeout,
     smartSpeed: 1500,
-    loop: num > 1,
+    loop: num > items[0],
     nav: num > items[0] ? nav : false,
     dots: num > items[0] ? dot : false,
     autoplayHoverPause: true,
@@ -31,6 +31,7 @@ function owlslide(
       0: {
         items: items[4],
         margin: margin[4],
+        loop: num > items[4],
         autoplay: num > items[4] ? autoplay : false,
         nav: num > items[4] ? nav : false,
         dots: num > items[4] ? dot : false,
@@ -38,6 +39,7 @@ function owlslide(
       479: {
         items: items[3],
         margin: margin[3],
+        loop: num > items[3],
         autoplay: num > items[3] ? autoplay : false,
         nav: num > items[3] ? nav : false,
         dots: num > items[3] ? dot : false,
@@ -45,6 +47,7 @@ function owlslide(
       767: {
         items: items[2],
         margin: margin[2],
+        loop: num > items[2],
         autoplay: num > items[2] ? autoplay : false,
         nav: num > items[2] ? nav : false,
         dots: num > items[2] ? dot : false,
@@ -55,6 +58,7 @@ function owlslide(
         autoplay: num > items[1] ? autoplay : false,
         nav: num > items[1] ? nav : false,
         dots: num > items[1] ? dot : false,
+        loop: num > items[1],
       },
       1199: {
         items: items[0],
@@ -62,6 +66,7 @@ function owlslide(
         autoplay: num > items[0] ? autoplay : false,
         nav: num > items[0] ? nav : false,
         dots: num > items[0] ? dot : false,
+        loop: num > items[0],
       },
     },
   };
@@ -98,6 +103,14 @@ $(document).ready(() => {
       .siblings()
       .removeClass("active");
     $(this).parents("li").addClass("active").siblings().removeClass("active");
+    e.preventDefault();
+  });
+  $("html").on("change", ".tabs .tab-links", function (e) {
+    var currentAttrValue = $(this).val();
+    $(".tabs " + currentAttrValue)
+      .addClass("active")
+      .siblings()
+      .removeClass("active");
     e.preventDefault();
   });
   $(".modal").on("shown.bs.modal", function () {
@@ -188,6 +201,20 @@ $(document).ready(() => {
       )
     );
   });
+  $("#donors .owl-carousel").each(function () {
+    $(this).owlCarousel(
+      owlslide(
+        $(this).find(">*").length,
+        [20, 20, 20, 20, 20, 20],
+        true,
+        true,
+        true,
+        [5, 4, 3, 3, 2],
+        "",
+        ""
+      )
+    );
+  });
   $(".btnSearchPage").click(function () {
     if ($(this).hasClass("active")) {
       $("#menu .divSearchPage").slideUp();
@@ -213,8 +240,9 @@ $(window).resize(function () {
 });
 
 function loadPageFacebook() {
-  var container_width = $('#pluginShare .facebook').width();
-  $('#pageFacebook').html(`<div class="fb-page" data-href="https://www.facebook.com/Vietsports2020" data-tabs="timeline" data-width="${container_width}"
+  var container_width = $("#pluginShare .facebook").width();
+  $("#pageFacebook")
+    .html(`<div class="fb-page" data-href="https://www.facebook.com/Vietsports2020" data-tabs="timeline" data-width="${container_width}"
           data-height="570" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
           data-show-facepile="true">
           <blockquote cite="https://www.facebook.com/Vietsports2020" class="fb-xfbml-parse-ignore">
@@ -239,20 +267,20 @@ function Increasenoidung() {
   $(".noidung").css(
     "cssText",
     "font-size:" +
-    size +
-    "px !important; line-height:" +
-    lineheight +
-    "px !important"
+      size +
+      "px !important; line-height:" +
+      lineheight +
+      "px !important"
   );
   $(".noidung")
     .find("*")
     .css(
       "cssText",
       "font-size:" +
-      size +
-      "px !important; line-height:" +
-      lineheight +
-      "px !important"
+        size +
+        "px !important; line-height:" +
+        lineheight +
+        "px !important"
     );
 }
 function Decreasenoidung() {
@@ -261,20 +289,20 @@ function Decreasenoidung() {
   $(".noidung").css(
     "cssText",
     "font-size:" +
-    size +
-    "px !important; line-height:" +
-    lineheight +
-    "px !important"
+      size +
+      "px !important; line-height:" +
+      lineheight +
+      "px !important"
   );
   $(".noidung")
     .find("*")
     .css(
       "cssText",
       "font-size:" +
-      size +
-      "px !important; line-height:" +
-      lineheight +
-      "px !important"
+        size +
+        "px !important; line-height:" +
+        lineheight +
+        "px !important"
     );
 }
 function Resetnoidung() {
@@ -283,20 +311,20 @@ function Resetnoidung() {
   $(".noidung").css(
     "cssText",
     "font-size:" +
-    size +
-    "px !important; line-height:" +
-    lineheight +
-    "px !important"
+      size +
+      "px !important; line-height:" +
+      lineheight +
+      "px !important"
   );
   $(".noidung")
     .find("*")
     .css(
       "cssText",
       "font-size:" +
-      size +
-      "px !important; line-height:" +
-      lineheight +
-      "px !important"
+        size +
+        "px !important; line-height:" +
+        lineheight +
+        "px !important"
     );
 }
 function fullSrceenIframe() {

@@ -10,8 +10,8 @@
     z-index: 22;
     hr {
       -moz-transition: 0.5s all ease-in-out;
-      background: #fff;
-      border: 1px solid #fff;
+      background: #000;
+      border: 1px solid #000;
       transition: 0.5s all ease-in-out;
       z-index: 98;
       opacity: 1;
@@ -47,179 +47,184 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     z-index: 20;
     display: none;
   }
   header {
-    position: relative;
-    .wrp .right {
-      .menu {
-        padding: 10px 20px;
-        #menu {
-          position: fixed;
-          top: 0;
-          left: -100%;
-          overflow-y: auto;
-          background: $color-main;
-          height: 100vh;
-          width: 80vw;
-          z-index: 21;
-          transition: 0.3s all ease-in-out;
-          display: block;
-          padding: ptr(20) 0;
-          transition: 0.3s all ease-in-out;
-          &.active {
-            left: 0;
-          }
-          .openSub {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: ptr(50);
-            font-size: ptr(20);
+    position: sticky;
+    .wrp {
+      align-items: center;
+      .right {
+        .menu {
+          padding: 10px 20px;
+          justify-content: flex-end;
+          #menu {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            overflow-y: auto;
+            background: $color-main;
+            height: 100vh;
+            width: 80vw;
+            z-index: 21;
+            transition: 0.3s all ease-in-out;
+            display: block;
+            padding: ptr(20) 0;
+            transition: 0.3s all ease-in-out;
             color: #fff;
-            &.ac {
-              i:before {
-                content: "\f106";
-              }
-            }
-          }
-          li {
-            display: flex;
-            padding: 0;
-            position: relative !important;
-            justify-content: space-between;
-            flex-wrap: wrap;
             &.active {
-              background: $color-hover !important;
-              color: #fff !important;
+              left: 0;
             }
-            a {
-              background: transparent !important;
+            .openSub {
               display: flex;
-              padding: ptr(10) ptr(22);
               align-items: center;
-              justify-content: flex-start;
-              flex-direction: row;
-              border-right: none;
-              flex: 1;
-              font-family: Roboto;
-              font-weight: normal;
-              font-size: 14px;
-            }
-            &:hover {
-              > ul,
-              .menuSub {
-                display: none;
-              }
-
-              > a {
-                background: transparent;
-                color: #fff;
+              justify-content: center;
+              width: ptr(50);
+              font-size: ptr(20);
+              color: #fff;
+              &.ac {
+                i:before {
+                  content: "\f106";
+                }
               }
             }
-            ul {
-              text-transform: none;
-              visibility: visible;
-              opacity: 1;
-              pointer-events: all;
+            li {
+              display: flex;
               padding: 0;
-              padding-left: ptr(20);
-              transition: none;
-              height: auto;
-              display: none;
-              width: 100%;
-              position: static;
-              background: transparent;
-              box-shadow: none;
-              li {
-                a {
+              position: relative !important;
+              justify-content: space-between;
+              flex-wrap: wrap;
+              &.active {
+                background: $color-hover !important;
+                color: #fff !important;
+              }
+              a {
+                background: transparent !important;
+                display: flex;
+                padding: ptr(10) ptr(22);
+                align-items: center;
+                justify-content: flex-start;
+                flex-direction: row;
+                border-right: none;
+                flex: 1;
+                font-family: Roboto;
+                font-weight: normal;
+                font-size: 14px;
+              }
+              &:hover {
+                > ul,
+                .menuSub {
+                  display: none;
+                }
+
+                > a {
+                  background: transparent;
                   color: #fff;
-                  padding: ptr(10);
-                  white-space: normal;
-                  font-family: Roboto;
-                  font-weight: normal;
-                  font-size: 14px;
-                  > i {
-                    display: none;
-                  }
                 }
               }
-            }
-            .toggleSearch {
-              display: none;
-            }
-            .menuSub {
-              position: static;
-              .menuLeft {
-                width: 100%;
+              ul {
+                text-transform: none;
+                visibility: visible;
+                opacity: 1;
+                pointer-events: all;
+                padding: 0;
+                padding-left: ptr(20);
+                transition: none;
                 height: auto;
-                overflow-x: auto;
-                .itemLink {
-                  display: table-cell;
-                  white-space: nowrap;
-                  text-align: left;
-                  font-size: 15px;
-                  &:hover,
-                  &.active {
-                    color: $color-hover;
-                  }
-                }
-              }
-              .menuRight {
-                padding: 10px 0;
-                .group {
-                  display: block;
-                  border-spacing: 15px 20px;
-                  max-width: 100%;
-                  overflow-x: auto;
-                  .item {
-                    margin-right: 20px;
-                    display: table-cell;
-                    min-width: 230px;
-                    .name {
-                      padding: 0;
+                display: none;
+                width: 100%;
+                position: static;
+                background: transparent;
+                box-shadow: none;
+                li {
+                  a {
+                    color: #fff;
+                    padding: ptr(10);
+                    white-space: normal;
+                    font-family: Roboto;
+                    font-weight: normal;
+                    font-size: 14px;
+                    > i {
+                      display: none;
                     }
                   }
                 }
               }
-              .btnNav {
-                justify-content: center;
-                a {
-                  flex: none;
-                  padding: 0;
+              .toggleSearch {
+                display: none;
+              }
+              .menuSub {
+                position: static;
+                .menuLeft {
+                  width: 100%;
+                  height: auto;
+                  overflow-x: auto;
+                  .itemLink {
+                    display: table-cell;
+                    white-space: nowrap;
+                    text-align: left;
+                    font-size: 15px;
+                    &:hover,
+                    &.active {
+                      color: $color-hover;
+                    }
+                  }
+                }
+                .menuRight {
+                  padding: 10px 0;
+                  .group {
+                    display: block;
+                    border-spacing: 15px 20px;
+                    max-width: 100%;
+                    overflow-x: auto;
+                    .item {
+                      margin-right: 20px;
+                      display: table-cell;
+                      min-width: 230px;
+                      .name {
+                        padding: 0;
+                      }
+                    }
+                  }
+                }
+                .btnNav {
+                  justify-content: center;
+                  a {
+                    flex: none;
+                    padding: 0;
+                  }
                 }
               }
+              &:last-child {
+                position: sticky !important;
+                bottom: 0;
+              }
             }
-            &:last-child {
-              position: sticky !important;
-              bottom: 0;
+            &.ac {
+              left: 0;
             }
-          }
-          &.ac {
-            left: 0;
-          }
-          .btnSearchPage {
-            display: none;
-          }
-          .divSearchPage {
-            margin: 0 10px;
-            display: flex !important;
-            position: static;
-            opacity: 1 !important;
-            margin-top: ptr(10);
-            width: 100%;
-            input {
-              flex: 1;
+            .btnSearchPage {
+              display: none;
             }
-            .btn_divSearchPage {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              padding: 0;
-              width: 50px;
-              flex: none;
+            .divSearchPage {
+              margin: 0 10px;
+              display: flex !important;
+              position: static;
+              opacity: 1 !important;
+              margin-top: ptr(10);
+              width: 100%;
+              input {
+                flex: 1;
+              }
+              .btn_divSearchPage {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                width: 50px;
+                flex: none;
+              }
             }
           }
         }
@@ -606,12 +611,7 @@
 
 @media (max-width: 479px) {
   header {
-    padding-top: 20px;
     .wrp {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
       .right {
         width: 100%;
         flex-direction: column-reverse;
