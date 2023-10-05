@@ -771,10 +771,9 @@ header {
         }
         &:is(select) {
           border: none;
-          width: 80%;
+          width: 100%;
           outline: none;
           padding: 0 10px;
-          margin-left: 10%;
           margin-bottom: 25px;
         }
       }
