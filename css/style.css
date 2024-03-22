@@ -3324,6 +3324,9 @@ select {
   position: relative;
   top: 0;
 }
+#FullStatistics .wrp .item .text {
+  text-align: center;
+}
 #FullStatistics .wrp .item:hover {
   filter: brightness(1.05);
   cursor: pointer;

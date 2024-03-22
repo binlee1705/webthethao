@@ -308,6 +308,9 @@
     display: table-cell;
     padding-right: 6px;
   }
+  #FullStatistics .wrp .item {
+    font-size: 0.8125rem;
+  }
 }
 @media (max-width: 991px) {
   #container .wrp {
@@ -482,6 +485,9 @@
   #hightLight .parent .group .item .info .name {
     font-size: 15px;
     line-height: 24px;
+  }
+  #FullStatistics .wrp .item {
+    width: 33.3333333333%;
   }
 }
 @media (max-width: 479px) {
@@ -774,6 +780,9 @@
   #schedule .round .group .table-responsive .table td {
     min-width: 70px;
     white-space: nowrap;
+  }
+  #FullStatistics .wrp .item {
+    width: 50%;
   }
 }
 @media (max-width: 320px) {

@@ -347,6 +347,14 @@
       padding-right: 6px;
     }
   }
+
+  #FullStatistics {
+    .wrp {
+      .item {
+        font-size: ptr(13);
+      }
+    }
+  }
 }
 
 @media (max-width: 991px) {
@@ -604,6 +612,13 @@
             }
           }
         }
+      }
+    }
+  }
+  #FullStatistics {
+    .wrp {
+      .item {
+        width: calc(100% / 3);
       }
     }
   }
@@ -997,6 +1012,13 @@
             }
           }
         }
+      }
+    }
+  }
+  #FullStatistics {
+    .wrp {
+      .item {
+        width: calc(100% / 2);
       }
     }
   }

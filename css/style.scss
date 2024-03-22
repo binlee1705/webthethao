@@ -2381,6 +2381,9 @@ select {
         position: relative;
         top: 0;
       }
+      .text {
+        text-align: center;
+      }
       &:hover {
         filter: brightness(1.05);
         cursor: pointer;
