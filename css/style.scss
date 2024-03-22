@@ -2345,3 +2345,49 @@ select {
 .btn_divSearchPage {
   display: none;
 }
+
+#FullStatistics {
+  margin-bottom: ptr(30);
+  .titleModule {
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bold;
+    font-size: ptr(18);
+    margin-bottom: ptr(15);
+  }
+  .wrp {
+    display: flex;
+    flex-wrap: wrap;
+    .item {
+      transition: 0.1s all ease-in-out;
+      width: calc(100% / 4);
+      padding: ptr(20) ptr(10) ptr(15) ptr(10);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: ptr(15);
+      gap: ptr(3);
+      background: var(--bg);
+      color: var(--color);
+      .number {
+        font-size: ptr(30);
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: bold;
+        min-height: ptr(22);
+        transition: 0.3s all ease-in-out;
+        position: relative;
+        top: 0;
+      }
+      &:hover {
+        filter: brightness(1.05);
+        cursor: pointer;
+        .number {
+          top: ptr(-5);
+        }
+      }
+    }
+  }
+}
