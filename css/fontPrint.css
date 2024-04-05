@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "UTMSharnay";
+  src: url("./font/UTMSharnay.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "UTMHELVETINS";
+  src: url("./font/UTMHELVETINS.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "UTMAvo";
+  src: url("./font/UTMAvoBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+/* 
+@font-face {
+  font-family: "UTMAvo";
+  src: url("./font/UTMAvo-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "UTMAvo";
+  src: url("./font/UTMAvo-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "UTMAvo";
+  src: url("./font/UTMAvo.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+} */
+
+@font-face {
+  font-family: "UTMBebas";
+  src: url("./font/UTMBebas.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
