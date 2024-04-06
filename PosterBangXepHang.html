@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/fontPrint.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      p {
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body style="padding: 0; margin: 0">
+    <div
+      id="element"
+      style="
+        width: 1280px;
+        color: #fff;
+        font-family: UTMBebas;
+        padding: 35px 20px 25px 20px;
+        position: relative;
+        background: url(./pic/bgLichThiDau.png) top center no-repeat;
+        background-size: cover;
+      "
+    >
+      <div
+        style="
+          position: relative;
+          z-index: 3;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        "
+      >
+        <div
+          style="
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 50px;
+            width: 100%;
+          "
+        >
+          <div style="flex: 1">
+            <img src="./pic/vl-2023.png" style="max-width: 100%" />
+          </div>
+          <div
+            style="
+              line-height: 70px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <p
+              style="text-transform: uppercase; color: #ecb80c; font-size: 40px"
+            >
+              Giải bóng đá vô địch thành phố Hà Nội lần 4 năm 2024
+            </p>
+            <p
+              style="
+                text-transform: uppercase;
+                font-family: UTMAvo;
+                font-size: 82px;
+                text-shadow: 0px 3px 0 #cd2826;
+              "
+            >
+              Thien Khoi Cup
+            </p>
+          </div>
+          <div style="flex: 1; display: flex; justify-content: flex-end">
+            <img src="./pic/LS_Electric_logo.png" style="max-width: 100%" />
+          </div>
+        </div>
+        <p
+          style="
+            text-transform: uppercase;
+            margin: 50px 0 40px 0;
+            font-size: 56px;
+          "
+        >
+          Bảng xếp hạng sau vòng 2
+        </p>
+        <div style="width: 90%; margin-bottom: 100px">
+          <div
+            style="
+              display: flex;
+              text-transform: uppercase;
+              color: #222;
+              background: #fff;
+              line-height: 50px;
+              text-align: center;
+              font-size: 28px;
+              margin-bottom: 20px;
+              font-family: UTMBebas;
+              letter-spacing: 0.5px;
+              font-weight: bold;
+            "
+          >
+            <div style="flex: 1">Hạng</div>
+            <div style="width: 400px">Câu lạc bộ</div>
+            <div style="flex: 1">Thắng</div>
+            <div style="flex: 1">Hòa</div>
+            <div style="flex: 1">Thua</div>
+            <div style="flex: 1">Hiệu số</div>
+            <div style="flex: 1">Điểm</div>
+          </div>
+          <div>
+            <div
+              style="
+                display: flex;
+                text-transform: uppercase;
+                color: #000;
+                background: #fff;
+                line-height: 60px;
+                text-align: center;
+                font-size: 40px;
+                margin-bottom: 20px;
+                font-family: UTMBebas;
+                background: #f4f5e5;
+              "
+            >
+              <div
+                style="
+                  flex: 1;
+                  background: #000;
+                  color: #fff;
+                  font-family: 'Birthstone', cursive;
+                  font-size: 35px;
+                  line-height: 65px;
+                "
+              >
+                01
+              </div>
+              <div
+                style="
+                  width: 400px;
+                  background: #000;
+                  color: #fff;
+                  font-size: 35px;
+                  display: flex;
+                  gap: 30px;
+                "
+              >
+                <p
+                  style="
+                    margin: -6px 0;
+                    background: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transform: skewX(-15deg);
+                    width: 115px;
+                    height: 65px;
+                    padding: 5px 0;
+                  "
+                >
+                  <img
+                    src="./pic/Ba-Ria-Vung-Tau-150x150.png"
+                    alt=""
+                    style="
+                      max-width: 100%;
+                      max-height: 100%;
+                      object-fit: contain;
+                      transform: skewX(15deg);
+                    "
+                  />
+                </p>
+                <p>EOC FC</p>
+              </div>
+              <div style="flex: 1; font-weight: bold">2</div>
+              <div style="flex: 1; font-weight: bold">0</div>
+              <div style="flex: 1; font-weight: bold">0</div>
+              <div style="flex: 1; font-weight: bold">6</div>
+              <div style="flex: 1; font-weight: bold">6</div>
+            </div>
+            <div
+              style="
+                display: flex;
+                text-transform: uppercase;
+                color: #000;
+                background: #fff;
+                line-height: 60px;
+                text-align: center;
+                font-size: 40px;
+                margin-bottom: 20px;
+                font-family: UTMBebas;
+                background: #f4f5e5;
+              "
+            >
+              <div
+                style="
+                  flex: 1;
+                  background: #000;
+                  color: #fff;
+                  font-family: 'Birthstone', cursive;
+                  font-size: 35px;
+                  line-height: 65px;
+                "
+              >
+                01
+              </div>
+              <div
+                style="
+                  width: 400px;
+                  background: #000;
+                  color: #fff;
+                  font-size: 35px;
+                  display: flex;
+                  gap: 30px;
+                "
+              >
+                <p
+                  style="
+                    margin: -6px 0;
+                    background: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transform: skewX(-15deg);
+                    width: 115px;
+                    height: 65px;
+                    padding: 5px 0;
+                  "
+                >
+                  <img
+                    src="./pic/Ba-Ria-Vung-Tau-150x150.png"
+                    alt=""
+                    style="
+                      max-width: 100%;
+                      max-height: 100%;
+                      object-fit: contain;
+                      transform: skewX(15deg);
+                    "
+                  />
+                </p>
+                <p>EOC FC</p>
+              </div>
+              <div style="flex: 1; font-weight: bold">2</div>
+              <div style="flex: 1; font-weight: bold">0</div>
+              <div style="flex: 1; font-weight: bold">0</div>
+              <div style="flex: 1; font-weight: bold">6</div>
+              <div style="flex: 1; font-weight: bold">6</div>
+            </div>
+            <div
+              style="
+                display: flex;
+                text-transform: uppercase;
+                color: #000;
+                background: #fff;
+                line-height: 60px;
+                text-align: center;
+                font-size: 40px;
+                margin-bottom: 20px;
+                font-family: UTMBebas;
+                background: #f4f5e5;
+              "
+            >
+              <div
+                style="
+                  flex: 1;
+                  background: #000;
+                  color: #fff;
+                  font-family: 'Birthstone', cursive;
+                  font-size: 35px;
+                  line-height: 65px;
+                "
+              >
+                01
+              </div>
+              <div
+                style="
+                  width: 400px;
+                  background: #000;
+                  color: #fff;
+                  font-size: 35px;
+                  display: flex;
+                  gap: 30px;
+                "
+              >
+                <p
+                  style="
+                    margin: -6px 0;
+                    background: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transform: skewX(-15deg);
+                    width: 115px;
+                    height: 65px;
+                    padding: 5px 0;
+                  "
+                >
+                  <img
+                    src="./pic/Ba-Ria-Vung-Tau-150x150.png"
+                    alt=""
+                    style="
+                      max-width: 100%;
+                      max-height: 100%;
+                      object-fit: contain;
+                      transform: skewX(15deg);
+                    "
+                  />
+                </p>
+                <p>EOC FC</p>
+              </div>
+              <div style="flex: 1; font-weight: bold">2</div>
+              <div style="flex: 1; font-weight: bold">0</div>
+              <div style="flex: 1; font-weight: bold">0</div>
+              <div style="flex: 1; font-weight: bold">6</div>
+              <div style="flex: 1; font-weight: bold">6</div>
+            </div>
+            <div
+              style="
+                display: flex;
+                text-transform: uppercase;
+                color: #000;
+                background: #fff;
+                line-height: 60px;
+                text-align: center;
+                font-size: 40px;
+                margin-bottom: 20px;
+                font-family: UTMBebas;
+                background: #f4f5e5;
+              "
+            >
+              <div
+                style="
+                  flex: 1;
+                  background: #000;
+                  color: #fff;
+                  font-family: 'Birthstone', cursive;
+                  font-size: 35px;
+                  line-height: 65px;
+                "
+              >
+                01
+              </div>
+              <div
+                style="
+                  width: 400px;
+                  background: #000;
+                  color: #fff;
+                  font-size: 35px;
+                  display: flex;
+                  gap: 30px;
+                "
+              >
+                <p
+                  style="
+                    margin: -6px 0;
+                    background: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transform: skewX(-15deg);
+                    width: 115px;
+                    height: 65px;
+                    padding: 5px 0;
+                  "
+                >
+                  <img
+                    src="./pic/Ba-Ria-Vung-Tau-150x150.png"
+                    alt=""
+                    style="
+                      max-width: 100%;
+                      max-height: 100%;
+                      object-fit: contain;
+                      transform: skewX(15deg);
+                    "
+                  />
+                </p>
+                <p>EOC FC</p>
+              </div>
+              <div style="flex: 1; font-weight: bold">2</div>
+              <div style="flex: 1; font-weight: bold">0</div>
+              <div style="flex: 1; font-weight: bold">0</div>
+              <div style="flex: 1; font-weight: bold">6</div>
+              <div style="flex: 1; font-weight: bold">6</div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+            flex: 1;
+          "
+        >
+          <div
+            style="
+              width: 120px;
+              border-radius: 30px;
+              background: #ff6505;
+              border: 3px solid #fff;
+              padding: 3px;
+            "
+          >
+            <img
+              src="./pic/LS_Electric_logo.png"
+              alt=""
+              style="display: block; width: 100%"
+            />
+          </div>
+          <div
+            style="
+              width: 120px;
+              border-radius: 30px;
+              background: #f4e50c;
+              border: 3px solid #fff;
+              padding: 3px;
+            "
+          >
+            <img
+              src="./pic/LS_Electric_logo.png"
+              alt=""
+              style="display: block; width: 100%"
+            />
+          </div>
+          <div
+            style="
+              width: 120px;
+              border-radius: 30px;
+              background: #fff;
+              border: 3px solid #fff;
+              padding: 3px;
+            "
+          >
+            <img
+              src="./pic/LS_Electric_logo.png"
+              alt=""
+              style="display: block; width: 100%"
+            />
+          </div>
+          <div
+            style="
+              width: 120px;
+              border-radius: 30px;
+              background: #0a66b9;
+              border: 3px solid #fff;
+              padding: 3px;
+            "
+          >
+            <img
+              src="./pic/LS_Electric_logo.png"
+              alt=""
+              style="display: block; width: 100%"
+            />
+          </div>
+          <div
+            style="
+              width: 120px;
+              border-radius: 30px;
+              background: #fff;
+              border: 3px solid #fff;
+              padding: 3px;
+            "
+          >
+            <img
+              src="./pic/LS_Electric_logo.png"
+              alt=""
+              style="display: block; width: 100%"
+            />
+          </div>
+          <div
+            style="
+              width: 120px;
+              border-radius: 30px;
+              background: #f4e50c;
+              border: 3px solid #fff;
+              padding: 3px;
+            "
+          >
+            <img
+              src="./pic/LS_Electric_logo.png"
+              alt=""
+              style="display: block; width: 100%"
+            />
+          </div>
+          <div
+            style="
+              width: 120px;
+              border-radius: 30px;
+              background: #fff;
+              border: 3px solid #fff;
+              padding: 3px;
+            "
+          >
+            <img
+              src="./pic/LS_Electric_logo.png"
+              alt=""
+              style="display: block; width: 100%"
+            />
+          </div>
+          <div
+            style="
+              width: 120px;
+              border-radius: 30px;
+              background: #0a66b9;
+              border: 3px solid #fff;
+              padding: 3px;
+            "
+          >
+            <img
+              src="./pic/LS_Electric_logo.png"
+              alt=""
+              style="display: block; width: 100%"
+            />
+          </div>
+          <div
+            style="
+              width: 120px;
+              border-radius: 30px;
+              background: #fff;
+              border: 3px solid #fff;
+              padding: 3px;
+            "
+          >
+            <img
+              src="./pic/LS_Electric_logo.png"
+              alt=""
+              style="display: block; width: 100%"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" onclick="ExportImage()">Xuất ảnh</button>
+    <div>
+      <p>Ảnh sau khi xuất</p>
+      <div id="exportImage"></div>
+    </div>
+  </body>
+  <script>
+    function ExportImage() {
+      // đoan code convert từ html sang ảnh
+      var element = $("#element")[0];
+      var width = $("#element").innerWidth();
+      var height = $("#element").innerHeight();
+      html2canvas(element, { width: width, height: height }).then(function (
+        canvas
+      ) {
+        var imgData = canvas.toDataURL("image/png");
+        var img = new Image(width, height);
+        img.src = imgData;
+        $("#exportImage").append(img);
+
+        // muốn in ảnh thôi thì xoá dùng câu lệnh dưới để xoá html
+        // element.remove();
+      });
+    }
+  </script>
+</html>
